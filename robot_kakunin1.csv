@@ -1,0 +1,166 @@
+bank_name,url,robots_txt_url,crawl_status
+ゆうちょ銀行,https://www.jp-bank.japanpost.jp/kinri/kinri.html,https://www.jp-bank.japanpost.jp/robots.txt,True
+三菱UFJ銀行,https://www.bk.mufg.jp/ippan/kinri/yen_yokin.html,,Error
+あおぞら銀,https://www.aozorabank.co.jp/bank/kinri/index.html,,Error
+関西みらい銀行,https://www.kansaimiraibank.co.jp/kojin/enkinri.html,https://www.kansaimiraibank.co.jp/robots.txt,No robots.txt
+池田泉州銀行,https://www.sihd-bk.jp/personal/interest/yen/,https://www.sihd-bk.jp/robots.txt,True
+南都銀行,https://www.nantobank.co.jp/kinri/20240603.html,https://www.nantobank.co.jp/robots.txt,True
+清水銀行,https://www.shimizubank.co.jp/interest/rate/yokin.html,https://www.shimizubank.co.jp/robots.txt,No robots.txt
+大垣共立銀行,https://www.okb.co.jp/cgi-bin/kinri_rate/kinri_rate.php,https://www.okb.co.jp/robots.txt,No robots.txt
+十六銀行,https://www.juroku.co.jp/kinri/yokin/,https://www.juroku.co.jp/robots.txt,True
+イオン銀行,https://www.aeonbank.co.jp/interest/deposit/,https://www.aeonbank.co.jp/robots.txt,True
+ＳＢＪ銀行,https://www.sbjbank.co.jp/individual/interest.html,https://www.sbjbank.co.jp/robots.txt,True
+auじぶん銀行,https://www.jibunbank.co.jp/interest_and_commission/interest/,https://www.jibunbank.co.jp/robots.txt,True
+三十三銀行,https://www.33bank.co.jp/kojin/tameru/kinri.html,https://www.33bank.co.jp/robots.txt,No robots.txt
+百五銀行,https://www.hyakugo.co.jp/kinri/,https://www.hyakugo.co.jp/robots.txt,No robots.txt
+富山銀行,https://www.toyamabank.co.jp/pages/kinri_joho/yokin-kinri.htm,https://www.toyamabank.co.jp/robots.txt,No robots.txt
+北國銀行,https://www.hokkokubank.co.jp/bin/simulate/bin/credit.cgi,https://www.hokkokubank.co.jp/robots.txt,True
+福井銀行,https://www.fukuibank.co.jp/rates/yen/,,Error
+静岡銀行,https://www.shizuokabank.co.jp/interest/enka.html,https://www.shizuokabank.co.jp/robots.txt,No robots.txt
+スルガ銀行,https://www.surugabank.co.jp/suruga/pc/Rate?formNo=00107&startUp=suruga_rate,https://www.surugabank.co.jp/robots.txt,No robots.txt
+横浜銀行,https://www.boy.co.jp/rate/index.html,https://www.boy.co.jp/robots.txt,True
+第四北越銀行,https://www.dhbk.co.jp/rates/en/detail.html,https://www.dhbk.co.jp/robots.txt,No robots.txt
+山梨中央銀行,https://www.yamanashibank.co.jp/rate/deposit/,https://www.yamanashibank.co.jp/robots.txt,No robots.txt
+八十二銀行,https://www.82bank.co.jp/rate/yokin.html,https://www.82bank.co.jp/robots.txt,True
+北陸銀行,https://www.hokugin.co.jp/gaitame/yokinshohin/index.html,https://www.hokugin.co.jp/robots.txt,True
+筑波銀行,https://www.tsukubabank.co.jp/rates/rated.html,https://www.tsukubabank.co.jp/robots.txt,No robots.txt
+武蔵野銀行,https://www2.musashinobank.co.jp/rate/yokin/index.php,https://www2.musashinobank.co.jp/robots.txt,True
+千葉銀行,https://www.chibabank.co.jp/kinri/kinri.html,https://www.chibabank.co.jp/robots.txt,True
+千葉興業銀行,https://www.chibakogyo-bank.co.jp/kinri/yokin.html,https://www.chibakogyo-bank.co.jp/robots.txt,No robots.txt
+きらぼし銀行,https://www.kiraboshibank.co.jp/kinri/enyokin.html,https://www.kiraboshibank.co.jp/robots.txt,No robots.txt
+七十七銀行,https://www.77bank.co.jp/kinri/yokin/,https://www.77bank.co.jp/robots.txt,True
+東邦銀行,https://www.tohobank.co.jp/kinri/yokin.html,https://www.tohobank.co.jp/robots.txt,No robots.txt
+群馬銀行,https://www.gunmabank.co.jp/kinri/yokin.html,https://www.gunmabank.co.jp/robots.txt,True
+足利銀行,https://www.ashikagabank.co.jp/tameru/yokin/rate.php,https://www.ashikagabank.co.jp/robots.txt,No robots.txt
+山口銀行,https://www.yamaguchibank.co.jp/outline/rates/deposit/,https://www.yamaguchibank.co.jp/robots.txt,True
+阿波銀行,https://www.awabank.co.jp/kojin/news/2024/entry_common_17/,https://www.awabank.co.jp/robots.txt,True
+百十四銀行,https://www.114bank.co.jp/support/rate_fee/interest_rate.html,https://www.114bank.co.jp/robots.txt,No robots.txt
+常陽銀行,https://www.joyobank.co.jp/kinri/yokin.html,https://www.joyobank.co.jp/robots.txt,True
+北都銀行,https://www.hokutobank.co.jp/rate/,https://www.hokutobank.co.jp/robots.txt,No robots.txt
+荘内銀行,https://www.shonai.co.jp/information/rate/yokin.html,https://www.shonai.co.jp/robots.txt,No robots.txt
+山形銀行,https://www.yamagatabank.co.jp/internet/kinri/,https://www.yamagatabank.co.jp/robots.txt,True
+岩手銀行,https://www.iwatebank.co.jp/rate/deposit,,Error
+東北銀行,https://www.tohoku-bank.co.jp/kinri/en-kinri.html,https://www.tohoku-bank.co.jp/robots.txt,No robots.txt
+北洋銀行,https://www.hokuyobank.co.jp/rates/,https://www.hokuyobank.co.jp/robots.txt,No robots.txt
+きらやか銀行,https://www.kirayaka.co.jp/rate/,,Error
+北日本銀行,https://www.kitagin.co.jp/rate/deposit_yen.html,,Error
+GMOあおぞらネット銀行,https://gmo-aozora.com/priv/contents/interest.html,https://gmo-aozora.com/robots.txt,True
+PayPay銀行,https://www.paypay-bank.co.jp/interest/deposit.html,https://www.paypay-bank.co.jp/robots.txt,True
+SBI新生銀行,https://www.sbishinseibank.co.jp/rate_list/yen.html,https://www.sbishinseibank.co.jp/robots.txt,True
+仙台銀行,https://www.sendaibank.co.jp/rate/deposit.php,,Error
+福島銀行,https://www.fukushimabank.co.jp/kinri/kinri_yokin.html,https://www.fukushimabank.co.jp/robots.txt,No robots.txt
+大東銀行,https://www.daitobank.co.jp/kinri/,https://www.daitobank.co.jp/robots.txt,True
+東和銀行,https://www.towabank.co.jp/rate/yen/,https://www.towabank.co.jp/robots.txt,No robots.txt
+栃木銀行,https://www.tochigibank.co.jp/individual/support/rate/deposit.html,https://www.tochigibank.co.jp/robots.txt,True
+京葉銀行,https://www.keiyobank.co.jp/rate/yen/,https://www.keiyobank.co.jp/robots.txt,True
+東日本銀行,https://www.higashi-nipponbank.co.jp/cgi-bin/contents_deposit_items/index.cgi,https://www.higashi-nipponbank.co.jp/robots.txt,No robots.txt
+東京スター銀行,https://www.tokyostarbank.co.jp/rate/en_commission/,,Error
+神奈川銀行,https://www.kanagawabank.co.jp/public/kinritesu.html,https://www.kanagawabank.co.jp/robots.txt,No robots.txt
+大光銀行,https://www.taikobank.jp/deposit/rate.php,https://www.taikobank.jp/robots.txt,No robots.txt
+長野銀行,https://www.naganobank.co.jp/site/support/kinri.html,https://www.naganobank.co.jp/robots.txt,True
+富山第一銀行,https://www.first-bank.co.jp/sp/save/rate.html,https://www.first-bank.co.jp/robots.txt,No robots.txt
+福邦銀行,https://www.fukuho.co.jp/commission_rates/deposit.php,https://www.fukuho.co.jp/robots.txt,No robots.txt
+静岡中央銀行,https://www.shizuokachuo-bank.co.jp/sp/kinri.html,https://www.shizuokachuo-bank.co.jp/robots.txt,No robots.txt
+愛知銀行,https://www.aichibank.co.jp/interest/,https://www.aichibank.co.jp/robots.txt,No robots.txt
+名古屋銀行,https://www.meigin.com/kinri.html,https://www.meigin.com/robots.txt,True
+中京銀行,https://www.chukyo-bank.co.jp/interest_rate/yen/,https://www.chukyo-bank.co.jp/robots.txt,No robots.txt
+みなと銀行,https://www.minatobk.co.jp/smartphone/rate/jpydepositrate/,https://www.minatobk.co.jp/robots.txt,No robots.txt
+伊予銀行,https://www.iyobank.co.jp/kinri-gaikokukawasesoba-market/houkayokinkinri.html,https://www.iyobank.co.jp/robots.txt,No robots.txt
+四国銀行,https://www.shikokubank.co.jp/individual/kinri/yokin.html,https://www.shikokubank.co.jp/robots.txt,No robots.txt
+福岡銀行,https://www.fukuokabank.co.jp/price/depositrate/,https://www.fukuokabank.co.jp/robots.txt,No robots.txt
+島根銀行,https://www.shimagin.co.jp/kinri_tesuryo/kinri_tesuryo_yokin/,https://www.shimagin.co.jp/robots.txt,True
+トマト銀行,https://www.tomatobank.co.jp/cgi-bin/loan/simulation/kinri.pl,https://www.tomatobank.co.jp/robots.txt,No robots.txt
+もみじ銀行,https://www.momijibank.co.jp/outline/rates/deposit/,https://www.momijibank.co.jp/robots.txt,True
+西京銀行,https://www.saikyobank.co.jp/rate/,https://www.saikyobank.co.jp/robots.txt,No robots.txt
+徳島大正銀行,https://www.tokugin.co.jp/rate/deposit.html,https://www.tokugin.co.jp/robots.txt,No robots.txt
+香川銀行,https://www2.kagawabank.co.jp/rate/pcyokin.asp,https://www2.kagawabank.co.jp/robots.txt,True
+愛媛銀行,https://www.himegin.co.jp/personal/kinri/yokin.html,https://www.himegin.co.jp/robots.txt,True
+高知銀行,https://www.kochi-bank.co.jp/pdf/yokin_kinri.pdf,https://www.kochi-bank.co.jp/robots.txt,True
+福岡中央銀行,https://www.fukuokachuo-bank.co.jp/yokin/yokinkinri.html,https://www.fukuokachuo-bank.co.jp/robots.txt,True
+佐賀共栄銀行,https://kyogin.co.jp/kinri/save.php,https://kyogin.co.jp/robots.txt,No robots.txt
+長崎銀行,https://www.nagasakibank.co.jp/kojin/deposit/index_03.html,https://www.nagasakibank.co.jp/robots.txt,No robots.txt
+熊本銀行,https://www.kumamotobank.co.jp/price/depositrate/,https://www.kumamotobank.co.jp/robots.txt,No robots.txt
+住信SBIネット銀行,https://www.netbk.co.jp/contents/pages/wpl300301/i300301CT/DI30030600,,Error
+セブン銀行,https://www.sevenbank.co.jp/account/interest.html,,Error
+みずほ銀行,https://www.mizuhobank.co.jp/rate_fee/rate_deposit.html,https://www.mizuhobank.co.jp/robots.txt,True
+豊和銀行,https://www.howabank.co.jp/save/deposit/depositrate/,,Error
+宮崎太陽銀行,https://www.taiyobank.co.jp/individual/rate/yokin/,https://www.taiyobank.co.jp/robots.txt,True
+南日本銀行,https://nangin.jp/personal/interest/interest.html,https://nangin.jp/robots.txt,True
+沖縄海邦銀行,https://www.kaiho-bank.co.jp/rate/deposit/,https://www.kaiho-bank.co.jp/robots.txt,True
+西海みずき信用組合,https://saikaimizuki.co.jp/?news=news_2543-3,https://saikaimizuki.co.jp/robots.txt,True
+福江信用組合,https://www.fukue-cb.jp/contents/rate/,https://www.fukue-cb.jp/robots.txt,No robots.txt
+熊本県医師信用組合,http://www.kumamoto-doctor.shinkumi.jp/yokin.html,http://www.kumamoto-doctor.shinkumi.jp/robots.txt,No robots.txt
+熊本県信用組合,https://www.kumamotoken.shinkumi.jp/shouhin/yokin.html,https://www.kumamotoken.shinkumi.jp/robots.txt,No robots.txt
+大分県信用組合,https://www.oita-kenshin.co.jp/rate/,https://www.oita-kenshin.co.jp/robots.txt,True
+宮崎県南部信用組合,https://www.m-nanbu.shinkumi.jp/rate.html,https://www.m-nanbu.shinkumi.jp/robots.txt,No robots.txt
+鹿児島興業信用組合,https://www.ka-kousin.co.jp/kinri,https://www.ka-kousin.co.jp/robots.txt,True
+鹿児島県医師信用組合,https://www.kagoshima.med.or.jp/sinyou/superteikifukuri.html,https://www.kagoshima.med.or.jp/robots.txt,No robots.txt
+奄美信用組合,https://www.amamishinkumi.co.jp/deposit/,https://www.amamishinkumi.co.jp/robots.txt,No robots.txt
+北海道信用金庫,https://www.shinkin.co.jp/hokkaido/information/02information.php,https://www.shinkin.co.jp/robots.txt,No robots.txt
+室蘭信用金庫,https://www.shinkin.co.jp/muroshin/_kinri/index.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+筑邦銀行,https://www.chikugin.co.jp/riritsu/,,Error
+佐賀銀行,https://www.sagabank.co.jp/guide/kinri/deposit/,https://www.sagabank.co.jp/robots.txt,No robots.txt
+十八親和銀行,https://www.18shinwabank.co.jp/price/depositrate/,https://www.18shinwabank.co.jp/robots.txt,No robots.txt
+空知信用金庫,https://www.shinkin.co.jp/sorachi/rate/deposit.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+苫小牧信用金庫,https://www.shinkin.co.jp/tomashin/f_yokin_rate.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+北門信用金庫,https://www.shinkin.co.jp/hokumon/yokinkinri.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+伊達信用金庫,https://www.shinkin.co.jp/dateshin/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+北空知信用金庫,https://www.kitashin-bank.co.jp/rate/,https://www.kitashin-bank.co.jp/robots.txt,True
+日高信用金庫,http://www.hidaka-shinkin.co.jp/rate/,http://www.hidaka-shinkin.co.jp/robots.txt,No robots.txt
+渡島信用金庫,https://www.shinkin.co.jp/oshima/rate/index.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+道南うみ街信用金庫,https://www.d-umishin.co.jp/interest/,https://www.d-umishin.co.jp/robots.txt,True
+旭川信用金庫,https://www.shinkin.co.jp/ask/spm/service01/yokin_kinri.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+稚内信用金庫,https://www.shinkin.co.jp/wakashin/02-01.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+留萌信用金庫,https://www.shinkin.co.jp/rumoi/save_rate.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+北星信用金庫,https://www.hokusei-shinkin.co.jp/hotnews/detail_sp/00000345.html,https://www.hokusei-shinkin.co.jp/robots.txt,No robots.txt
+帯広信用金庫,https://www.shinkin.co.jp/obishin/rate/deposit/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+釧路信用金庫,https://www.shinkin.co.jp/kushiro/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+大地みらい信用金庫,https://www.daichimirai.co.jp/rate.html,https://www.daichimirai.co.jp/robots.txt,True
+SMBC,https://www.smbc.co.jp/kojin/kinri/yokin.html,https://www.smbc.co.jp/robots.txt,True
+りそな,https://www.resonabank.co.jp/kojin/enkinri.html,,Error
+ソニー銀行,https://moneykit.net/visitor/rate/dc.html,https://moneykit.net/robots.txt,True
+北見信用金庫,https://www.shinkin.co.jp/kitami/rate/index.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+網走信用金庫,https://www.shinkin.co.jp/abashiri/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+遠軽信用金庫,https://www.shinkin.co.jp/engaru/snav02_yokinkinri.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+東奥信用金庫,https://www.shinkin.co.jp/toshin/kinri-1.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+青い森信用金庫,https://www.aoimorishinkin.co.jp/yokin_kinri.html,https://www.aoimorishinkin.co.jp/robots.txt,True
+秋田信用金庫,https://www.shinkin.co.jp/akishin/deposit/kinri.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+羽後信用金庫,http://www.ugoshinkin.jp/rate/index.html,http://www.ugoshinkin.jp/robots.txt,No robots.txt
+山形信用金庫,https://www.shinkin.co.jp/y-shinkin/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+米沢信用金庫,https://www.shinkin.co.jp/yonezawa/bank_interest_rate.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+鶴岡信用金庫,https://www.tsuruoka-sk.jp/kinri/,https://www.tsuruoka-sk.jp/robots.txt,True
+新庄信用金庫,https://www.shinjosk.co.jp/product/deposit/index.html,https://www.shinjosk.co.jp/robots.txt,No robots.txt
+盛岡信用金庫,https://www.shinkin.co.jp/morishin/kojin/?id=interest,https://www.shinkin.co.jp/robots.txt,No robots.txt
+肥後銀行,https://www.higobank.co.jp/rate/,https://www.higobank.co.jp/robots.txt,No robots.txt
+大分銀行,https://www.oitabank.co.jp/interestrate-fee/kinri/yokin.html,https://www.oitabank.co.jp/robots.txt,No robots.txt
+宮崎銀行,https://www.miyagin.co.jp/fees-rate/rate/deposit/,https://www.miyagin.co.jp/robots.txt,True
+宮古信用金庫,http://www.miyashin.jp/rate.html,http://www.miyashin.jp/robots.txt,No robots.txt
+一関信用金庫,http://ichinoseki-shinkin.jp/rate/yokin.shtml,http://ichinoseki-shinkin.jp/robots.txt,No robots.txt
+北上信用金庫,https://e-shinkin.net/publics/index/10/,https://e-shinkin.net/robots.txt,True
+花巻信用金庫,https://www.shinkin.co.jp/hanamaki/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+水沢信用金庫,http://www.mizusawashinkin.co.jp/about/products/,http://www.mizusawashinkin.co.jp/robots.txt,No robots.txt
+杜の都信用金庫,https://www.morinomiyako-shinkin.co.jp/individual/rates.html,https://www.morinomiyako-shinkin.co.jp/robots.txt,True
+宮城第一信用金庫,https://www.miyashinbank.co.jp/pdf/yokinkinri_kaitei_20240408.pdf,,Error
+石巻信用金庫,http://www.i-shinkin.co.jp/tameru/kinri.html,http://www.i-shinkin.co.jp/robots.txt,No robots.txt
+仙南信用金庫,https://www.shinkin.co.jp/sennan/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+気仙沼信用金庫,https://www.shinkin.co.jp/kshinkin/kokuti/yokin_kinri_20200518.pdf,https://www.shinkin.co.jp/robots.txt,No robots.txt
+会津信用金庫,http://www.aizu-shinkin.jp/whats/kinri/kinri.pdf,http://www.aizu-shinkin.jp/robots.txt,No robots.txt
+郡山信用金庫,https://gunshin.co.jp/publics/index/56/,https://gunshin.co.jp/robots.txt,True
+白河信用金庫,https://www.shinkin.co.jp/sirakawa/kinri/index.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+須賀川信用金庫,https://www.sushin.co.jp/rate/kinri.html,https://www.sushin.co.jp/robots.txt,No robots.txt
+ひまわり信用金庫,https://www.shinkin.co.jp/himawari/kinri/kojin_annai_kinri_futsuyokin.html,https://www.shinkin.co.jp/robots.txt,No robots.txt
+あぶくま信用金庫,http://www.abukuma.co.jp/kinri.html,http://www.abukuma.co.jp/robots.txt,No robots.txt
+二本松信用金庫,http://www.matsushin.jp/file-pdf/kinri0401.pdf,http://www.matsushin.jp/robots.txt,No robots.txt
+福島信用金庫,https://www.shinkin.co.jp/fshinkin/_kinri/,https://www.shinkin.co.jp/robots.txt,No robots.txt
+鹿児島銀行,https://www.kagin.co.jp/view.php?pageId=1457,https://www.kagin.co.jp/robots.txt,No robots.txt
+琉球銀行,https://www.ryugin.co.jp/kinri-commission-souba/kinri/yokin/,https://www.ryugin.co.jp/robots.txt,No robots.txt
+沖縄銀行,https://www.okinawa-bank.co.jp/kinri/yokin.html,https://www.okinawa-bank.co.jp/robots.txt,No robots.txt
+西日本シティ銀行,https://www2.ncbank.co.jp/sp/rate/yokin.html,https://www2.ncbank.co.jp/robots.txt,True
+北九州銀行,https://www.kitakyushubank.co.jp/outline/rates/deposit/,https://www.kitakyushubank.co.jp/robots.txt,True
+埼玉りそな銀行,https://www.saitamaresona.co.jp/kojin/enkinri.html,https://www.saitamaresona.co.jp/robots.txt,True
+北海道銀行,https://www.hokkaidobank.co.jp/interest/yokin/,https://www.hokkaidobank.co.jp/robots.txt,True
+青森銀行,https://www.a-bank.jp/contents/kojin/support/rate/deposit.php,https://www.a-bank.jp/robots.txt,No robots.txt
+みちのく銀行,https://www.michinokubank.co.jp/kinri/enyokin.php,https://www.michinokubank.co.jp/robots.txt,True
+秋田銀行,https://www.akita-bank.co.jp/rate/,https://www.akita-bank.co.jp/robots.txt,No robots.txt
+滋賀銀行,https://www.shigagin.com/rate/deposit/,,Error
+京都銀行,https://www.kyotobank.co.jp/kinri/yokin/,https://www.kyotobank.co.jp/robots.txt,True
