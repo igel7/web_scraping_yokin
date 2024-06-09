@@ -1,0 +1,171 @@
+date,bank_name,url,selector,type,pref,code,interest_rate,js,success
+2024-06-09,東京東信用金庫,https://www.higashin.co.jp/information/documents/2024_001_01.pdf,,信用金庫,東京都,1320,,,False
+2024-06-09,東榮信用金庫,https://www.toeishinkin.co.jp/page_id=73.html,#table04 > tbody > tr:nth-child(2) > td:nth-child(1),信用金庫,東京都,1321,0.02,False,True
+2024-06-09,亀有信用金庫,https://www.shinkin.co.jp/kameari/pc/_office/interest.php,#top1 > div:nth-child(7) > div > div.body1left680 > div.body1left680 > div:nth-child(121),信用金庫,東京都,1323,0.02,False,True
+2024-06-09,甲府信用金庫,https://www.kofushinkin.co.jp/kinri/yokin.html,#contents > table:nth-child(12) > thead > tr > td:nth-child(2),信用金庫,山梨県,1385,0.02,False,True
+2024-06-09,山梨信用金庫,https://www.yamasin.jp/rates/,#\30 1 > div > table > tbody > tr > td:nth-child(1),信用金庫,山梨県,1386,0.02,False,True
+2024-06-09,長野信用金庫,https://www.nagano-shinkin.jp/cgi-bin/rate/rate.cgi?mode=deposit,body > main > div.l_contents > div > div > table > tbody > tr:nth-child(1) > td:nth-child(3),信用金庫,長野県,1390,0.02,False,True
+2024-06-09,松本信用金庫,https://www.matsumoto-shinkin.jp/ippan/kinri/,#top > div > section > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > table > tbody > tr > td > p,信用金庫,長野県,1391,0.02,True,True
+2024-06-09,上田信用金庫,https://www.shinmai.co.jp/news/article/CNTS2024040400347,,信用金庫,長野県,1392,,,False
+2024-06-09,諏訪信用金庫,http://www.suwashinkin.co.jp/sp/kyotsu/kinri/,#contents > table:nth-child(4) > tbody > tr:nth-child(2) > td,信用金庫,長野県,1393,0.02,True,True
+2024-06-09,飯田信用金庫,https://www.iidashinkin.co.jp/interest/,#article > article > div:nth-child(3) > section > table:nth-child(8) > tbody > tr:nth-child(4) > td,信用金庫,長野県,1394,0.020,False,True
+2024-06-09,アルプス中央信用金庫,https://www.shinkin.co.jp/alshin/other/kinri/index.shtml,body > main > div.contents > section.active > section:nth-child(8) > table > tbody > tr:nth-child(1) > td,信用金庫,長野県,1396,長野県がん先進医療ローン,False,True
+2024-06-09,富山信用金庫,https://www.shinkin.co.jp/tomishin/interest/,#contents > div.interest.mainWrap > table:nth-child(22) > tbody > tr > td:nth-child(2),信用金庫,富山県,1401,0.020,True,True
+2024-06-09,高岡信用金庫,https://www.shinkin.co.jp/takaoka/tameru/futsuuyokin.html,,信用金庫,富山県,1402,,,False
+2024-06-09,新湊信用金庫,https://www.shinkin.co.jp/s-minato/_kinri/,#main > article > div.content > table:nth-child(6) > tbody > tr > td,信用金庫,富山県,1404,0.02,False,True
+2024-06-09,にいかわ信用金庫,https://www.shinkin.co.jp/niikawa/_kinri/,#main > article > div.content > table:nth-child(6) > tbody > tr:nth-child(1) > td,信用金庫,富山県,1405,0.02,False,True
+2024-06-09,氷見伏木信用金庫,https://www.shinkin.co.jp/himifusi/rate/,body > main > section:nth-child(4) > div:nth-child(7) > div > div > div > table > tbody > tr:nth-child(1) > th.bl_table_td.hp_ta_r,信用金庫,富山県,1406,0.02,False,True
+2024-06-09,砺波信用金庫,https://www.tonami-shinkin.co.jp/savings/info.php,body > div > table:nth-child(7) > tbody > tr:nth-child(2) > td:nth-child(4),信用金庫,富山県,1412,,True,False
+2024-06-09,石動信用金庫,https://www.shinkin.co.jp/isurugi/yokinkinri.htm,body > center > table:nth-child(14) > tbody > tr:nth-child(2) > td:nth-child(1) > font,信用金庫,富山県,1413,0.02,True,True
+2024-06-09,金沢信用金庫,https://www.shinkin.co.jp/kanazawa/nwkinshin/rate_fee/ratefee.php?cate=11&clas=03,#rate > table > tbody > tr:nth-child(1) > td,信用金庫,石川県,1440,0.02,False,True
+2024-06-09,のと共栄信用金庫,https://www.shinkin.co.jp/notoshin/kinri/yokin.php,#tenpo_atm > section.pc_flex.pc_flex_sb.w1170.subpage_wrap_body > div.subpage_wrap_left > table:nth-child(4) > tbody > tr > td,信用金庫,石川県,1442,0.02,False,True
+2024-06-09,はくさん信用金庫,https://www.hakusanshinkin.co.jp/kinri/,#pageMain > div > div > div:nth-child(7) > div > table > tbody > tr:nth-child(2) > td,信用金庫,石川県,1444,0.02,True,True
+2024-06-09,興能信用金庫,https://www.kono-shinkin.co.jp/product/examine/deposit-interest-rate/,body > div.site > div.site-main > div > article > div > div:nth-child(11) > table > tbody > tr:nth-child(2) > td.i-rate,信用金庫,石川県,1448,0.02,False,True
+2024-06-09,福井信用金庫,https://www.shinkin.co.jp/fukushin/kinri/,#contents > div > div:nth-child(4) > div > table > tbody > tr:nth-child(2) > td.rate,信用金庫,福井県,1470,0.02,True,True
+2024-06-09,敦賀信用金庫,https://www.shinkin.co.jp/tsuruga/kinri/,#container > div > div > table:nth-child(16) > tbody > tr:nth-child(3) > td:nth-child(1),信用金庫,福井県,1471,0.02,True,True
+2024-06-09,小浜信用金庫,https://www.shinkin.co.jp/obama/kinri_tesuryo.html,,信用金庫,福井県,1473,,,False
+2024-06-09,越前信用金庫,https://www.shinkin.co.jp/echishin/kinri/index.html,#yokinkinri > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,福井県,1475,300万以上,True,True
+2024-06-09,しずおか焼津信用金庫,https://www.shizuokayaizu-shinkin.co.jp/info/rates/detail/id=463,#page_topics_detail16 > div.l-bodyInner > div.l-container--wrap > div > div.l-container--main > div:nth-child(21) > table > tbody > tr > td,信用金庫,静岡県,1501,0.020,False,True
+2024-06-09,静清信用金庫,https://www.seishin-shinkin.co.jp/rate/,#tab-01 > div:nth-child(12) > table > tbody > tr:nth-child(1) > td.color2.textright,信用金庫,静岡県,1502,0.02,True,True
+2024-06-09,浜松磐田信用金庫,https://hamamatsu-iwata.jp/guide/interest.html,#pageArea > table:nth-child(33) > tbody > tr > th,信用金庫,静岡県,1503,0.02,False,True
+2024-06-09,沼津信用金庫,https://www.numashin.co.jp/kinri/,body > div.contents > div > div:nth-child(22) > table > tbody > tr:nth-child(1) > td,信用金庫,静岡県,1505,0.02,False,True
+2024-06-09,三島信用金庫,https://www.mishima-shinkin.co.jp/rate_deposit/,#idCmsKinri_Detail > div.contents > div.cmn-section.pt60.sp_pt48 > div > div.table-wrap > table > tbody > tr > td,信用金庫,静岡県,1506,0.020,False,True
+2024-06-09,富士宮信用金庫,https://www.miyashin.co.jp/useful/kinrijoho.html,#contents > div.l-container.l-sp-collapse > div.l-mainContens > section:nth-child(3) > div > table > tbody > tr > td,信用金庫,静岡県,1507,0.020（利）,True,True
+2024-06-09,島田掛川信用金庫,https://www.sk-shinkin.co.jp/_kinri/,#l-content > div.content-inner > div.content-main > div > table:nth-child(10) > tbody > tr:nth-child(1) > td,信用金庫,静岡県,1513,0.020,True,True
+2024-06-09,小松川信用金庫,https://www.shinkin.co.jp/komashin/rate.html,#top-news > div > div:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td,信用金庫,東京都,1326,0.02,True,True
+2024-06-09,足立成和信用金庫,https://www.adachiseiwa.co.jp/about/kinri/?auth=903dac5adeec9344a695c6b27df84795,,信用金庫,東京都,1327,,,False
+2024-06-09,東京三協信用金庫,https://www.shinkin.co.jp/sankyo/kinri.htm,body > div > div > table > tbody > tr:nth-child(4) > td:nth-child(3) > table > tbody > tr > td:nth-child(3) > table:nth-child(3) > tbody > tr > td > table:nth-child(1) > tbody > tr:nth-child(2) > td.thnum,信用金庫,東京都,1333,0.02,True,True
+2024-06-09,富士信用金庫,https://fuji-shinkin.jp/usefull/deposit-interest-rates.html,#about-detail-sec01 > div:nth-child(8) > div:nth-child(2) > table > tbody > tr:nth-child(1) > td,信用金庫,静岡県,1515,0.02,False,True
+2024-06-09,遠州信用金庫,https://www.enshu-shinkin.jp/guide/interest/kinri2.php#sonota,#main > section:nth-child(6) > table > tbody > tr:nth-child(1) > td,信用金庫,静岡県,1517,0.02,False,True
+2024-06-09,岐阜信用金庫,https://www.gifushin.co.jp/kinri/kinri/index.html,#main_contents_in > div:nth-child(14) > table > tbody > tr:nth-child(6) > td.lastChild,信用金庫,岐阜県,1530,0.02,True,True
+2024-06-09,大垣西濃信用金庫,https://www.ogakiseino-shinkin.co.jp/daishin/kinri/yokin.html,,信用金庫,岐阜県,1531,,,False
+2024-06-09,高山信用金庫,https://www.shinkin.co.jp/takayama/interest/interest.html,#contents02_right > table:nth-child(33) > tbody > tr:nth-child(1) > td,信用金庫,岐阜県,1532,0.02,True,True
+2024-06-09,東濃信用金庫,https://www.shinkin.co.jp/tono/rate/yokin.html,#main-inner > section:nth-child(2) > div > table:nth-child(2) > tbody > tr:nth-child(1) > td,信用金庫,岐阜県,1533,0.02,False,True
+2024-06-09,関信用金庫,https://www.shinkin.co.jp/seki1534/rate_commission/rate/,#jump01 > div.warp-rate-s.pcWrapLR.mB1em > div.interval1em > table > tbody > tr:nth-child(2) > td:nth-child(3),信用金庫,岐阜県,1534,0.02,False,True
+2024-06-09,八幡信用金庫,https://www.shinkin.co.jp/hachiman/yokinkinri/,#yokinkinri > section.contents-box1.container > ul:nth-child(12) > li:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(1),信用金庫,岐阜県,1538,0.02,True,True
+2024-06-09,愛知信用金庫,https://www.aichishinkin.co.jp/kinri_yokin.html,,信用金庫,愛知県,1550,,,False
+2024-06-09,豊橋信用金庫,https://www.toyo-shin.co.jp/_kinri/,#mainCol > table:nth-child(25) > tbody > tr:nth-child(2) > td,信用金庫,愛知県,1551,0.02,True,True
+2024-06-09,岡崎信用金庫,https://www.okashin.co.jp/rate/deposit_rate/,#link07 > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,愛知県,1552,0.02,True,True
+2024-06-09,いちい信用金庫,https://www.shinkin.co.jp/ichii/kinri.html,#pagetop > div.content.fuyasu > div.w1280.lastChild > div.main-box.firstChild > section:nth-child(8) > div > table > tbody > tr.even.lastChild > td,信用金庫,愛知県,1553,,True,False
+2024-06-09,瀬戸信用金庫,https://www.setoshin.co.jp/kozin/tameru/tameru_rate/,,信用金庫,愛知県,1554,,,False
+2024-06-09,半田信用金庫,https://www.hanshin-ca.co.jp/mod-perl/00103-01.cgi,#wrap > div.cont-box.id00103 > table.futsu > tbody > tr:nth-child(1) > td,信用金庫,愛知県,1555,0.02,False,True
+2024-06-09,知多信用金庫,https://www.chitashin.co.jp/other/rate/yokin.html,#main > div > table:nth-child(13) > tbody > tr:nth-child(2) > td,信用金庫,愛知県,1556,0.02,True,True
+2024-06-09,豊川信用金庫,https://www.kawa-shin.co.jp/_kinri/,#content > div:nth-child(6) > table:nth-child(15) > tbody > tr:nth-child(1) > td,信用金庫,愛知県,1557,0.02,False,True
+2024-06-09,豊田信用金庫,https://www.toyoshin.co.jp/saving/yokinkinri/,#ryudou > section:nth-child(2) > table > tbody > tr > td,信用金庫,愛知県,1559,0.02,False,True
+2024-06-09,碧海信用金庫,https://www.hekishin.jp/useful/kinri/about/yokinkinri.php,#contents > div > div:nth-child(9) > div.table.scrollbox > table > tbody > tr:nth-child(1) > td,信用金庫,愛知県,1560,0.02,False,True
+2024-06-09,西尾信用金庫,https://www.shinkin.co.jp/nishio/kinri/yokin/,body > main > section > div:nth-child(27) > div > div > div > table > tbody > tr:nth-child(1) > td:nth-child(3),信用金庫,愛知県,1561,0.02,True,True
+2024-06-09,蒲郡信用金庫,https://www.gamashin.com/rate/savings.php,#content_in714 > div:nth-child(6) > table > tbody > tr:nth-child(1) > td:nth-child(3),信用金庫,愛知県,1562,0.02,True,True
+2024-06-09,尾西信用金庫,https://www.bi-shin.co.jp/kinri.html,#kinri > section.Mb020 > table.table00_kinri1 > tbody > tr:nth-child(1) > td,信用金庫,愛知県,1563,0.001,True,True
+2024-06-09,中日信用金庫,https://www.shinkin.co.jp/chunichi/kinri/kinri_index.html,#sec05 > table > tbody > tr > td:nth-child(1),信用金庫,愛知県,1565,0.02,True,True
+2024-06-09,東春信用金庫,http://www.toshun.co.jp/rate/deposit/deposit.php,#rate > table:nth-child(3) > tbody > tr:nth-child(1) > td,信用金庫,愛知県,1566,,True,False
+2024-06-09,津信用金庫,https://www.tsushinkin.co.jp/html/var.htm,,信用金庫,三重県,1580,,,False
+2024-06-09,北伊勢上野信用金庫,https://www.kitaiseueno-shinkin.jp/y-interest/,,信用金庫,三重県,1581,,,False
+2024-06-09,桑名三重信用金庫,https://www.shinkin.co.jp/kuwanamie/save/deposit-rate/,body > div.wrapper > div.section > div > div > section:nth-child(7) > table > tbody > tr > td,信用金庫,三重県,1583,0.02,True,True
+2024-06-09,紀北信用金庫,https://www.shinkin.co.jp/kihoku/person_tameru.html,,信用金庫,三重県,1585,,,False
+2024-06-09,滋賀中央信用金庫,https://www.shigachushin.jp/rate_deposit,#entry > div:nth-child(5) > table > tbody > tr:nth-child(2) > td:nth-child(3),信用金庫,滋賀県,1602,0.02,False,True
+2024-06-09,長浜信用金庫,https://www.nagashin.co.jp/_kinri/,body > main > div.wrapper.wrapper--w-l > article:nth-child(3) > div > div > table > tbody > tr:nth-child(32) > td,信用金庫,滋賀県,1603,0.02,False,True
+2024-06-09,湖東信用金庫,http://www.kotoshin.co.jp/_kinri/,#article > article > section > div > ul:nth-child(11) > li:nth-child(3) > table:nth-child(8) > tbody > tr:nth-child(1) > td,信用金庫,滋賀県,1604,0.02,True,True
+2024-06-09,西京信用金庫,https://www.shinkin.co.jp/saikyo/kinri/index.shtml,#item01 > div:nth-child(4) > p,信用金庫,東京都,1336,0.02,False,True
+2024-06-09,西武信用金庫,https://www.shinkin.co.jp/seibu/kinri/deposit/,#wrap > div.container > div > div.inner_s > div:nth-child(19) > table > tbody > tr > td:nth-child(3),信用金庫,東京都,1341,0.01,False,True
+2024-06-09,城南信用金庫,https://www.jsbank.co.jp/saving/kinri/,#top > main > div > div.l-main-contets > section > section > ul > li:nth-child(1) > table > tbody > tr > td,信用金庫,東京都,1344,0.02,True,True
+2024-06-09,京都信用金庫,https://www.kyoto-shinkin.co.jp/_kinri/index.html,#s_tsuuchi > tbody > tr:nth-child(2) > td > span,信用金庫,京都府,1610,0.02,False,True
+2024-06-09,京都中央信用金庫,https://www.chushin.co.jp/rate/deposit/,#contents > section:nth-child(2) > div > div.tableWrapper.tbl02 > table > tbody > tr:nth-child(30) > td:nth-child(3),信用金庫,京都府,1611,0.02,False,True
+2024-06-09,京都北都信用金庫,http://www.hokuto-shinkin.co.jp/_kinri/,#article > article > section > div > table:nth-child(20) > tbody > tr:nth-child(1) > td,信用金庫,京都府,1620,0.02,True,True
+2024-06-09,大阪信用金庫,https://www.osaka-shinkin.co.jp/rate/,#contents-area > div > main > div.content-rate-2 > section:nth-child(1) > table > tbody > tr > td > span,信用金庫,大阪府,1630,0.02,True,True
+2024-06-09,大阪厚生信用金庫,https://www.co-sei.co.jp/kojin/tameru/,,信用金庫,大阪府,1633,,,False
+2024-06-09,大阪シティ信用金庫,https://www.osaka-city-shinkin.co.jp/rate/rate_list.html,#contents > table:nth-child(5) > tbody > tr > td:nth-child(2),信用金庫,大阪府,1635,0.02,True,True
+2024-06-09,大阪商工信用金庫,https://www.osaka-shoko.co.jp/tameru/futsuu/,,信用金庫,大阪府,1636,,,False
+2024-06-09,永和信用金庫,https://www.eiwa-shinkin.co.jp/data/pdf/deposit_interest_rate.pdf,,信用金庫,大阪府,1643,,,False
+2024-06-09,北おおさか信用金庫,https://www.kitaosaka-shinkin.co.jp/interest/interest01.html,#kinriArea > div:nth-child(6) > table > tbody > tr:nth-child(2) > td:nth-child(3),信用金庫,大阪府,1645,0.02,True,True
+2024-06-09,枚方信用金庫,https://www.hirakata-shinkin.co.jp/rate/,,信用金庫,大阪府,1656,,,False
+2024-06-09,奈良信用金庫,https://www.narashin.co.jp/service/kinri/,#contents > div.container > div:nth-child(4) > table > tbody > tr:nth-child(2) > td:nth-child(1),信用金庫,奈良県,1666,0.02,True,True
+2024-06-09,大和信用金庫,https://www.yamato-shinkin.co.jp/_kinri/,#kinri > main > article > div:nth-child(4) > div:nth-child(4) > div > table > tbody > tr:nth-child(1) > td > p,信用金庫,奈良県,1667,0.02,False,True
+2024-06-09,奈良中央信用金庫,https://www.narachuo-shinkinbank.co.jp/_kinri/index.html,#service_detail > div > div.detail.mb_30 > table:nth-child(10) > tbody > tr:nth-child(3) > td.center.center2.left_line,信用金庫,奈良県,1668,0.02,False,True
+2024-06-09,新宮信用金庫,https://www.shinkin.co.jp/shingu/sin11.html,#page-shingu > main > div.contentsWrapper > div > div.mainContents > div > div:nth-child(3) > table > tbody > tr:nth-child(2) > td:nth-child(3) > strong,信用金庫,和歌山県,1671,0.02,False,True
+2024-06-09,きのくに信用金庫,https://www.kinokuni-shinkin.jp/personal/kinri/yokin-kinri.html,#personal > main > article > section > div > table > tbody:nth-child(4) > tr > td:nth-child(3),信用金庫,和歌山県,1674,0.02,False,True
+2024-06-09,神戸信用金庫,https://www.shinkinbank.co.jp/service/yokin.html,#mainContents > div:nth-child(13) > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,兵庫県,1680,0.02,False,True
+2024-06-09,姫路信用金庫,https://www.shinkin.co.jp/himeshin/kinri/yokin_kinri.html,#main > table:nth-child(18) > tbody > tr:nth-child(3) > td:nth-child(1) > div,信用金庫,兵庫県,1685,,True,False
+2024-06-09,播州信用金庫,https://www.shinkin.co.jp/banshin/kinri/deposit.html,#D7 > div > table > tbody > tr:nth-child(1) > td,信用金庫,兵庫県,1686,0.02,False,True
+2024-06-09,兵庫信用金庫,https://www.shinkin.co.jp/hyoshin/tesuuryou/yokin_kinri.html,#content > div:nth-child(9) > div:nth-child(2) > p > strong,信用金庫,兵庫県,1687,0.02,False,True
+2024-06-09,尼崎信用金庫,https://www.amashin.co.jp/jyoho/amakinri.html,#yokin > div.innerWrap > table:nth-child(18) > tbody > tr:nth-child(1) > td,信用金庫,兵庫県,1688,0.02,True,True
+2024-06-09,日新信用金庫,https://www.nisshin-shinkin.co.jp/kojin/interest.php,#m06 > table > tbody > tr:nth-child(1) > td.text-right,信用金庫,兵庫県,1689,0.02,True,True
+2024-06-09,淡路信用金庫,https://www.shinkin.co.jp/awaji/kinri/index.html,#main > div.container > div > div.main.col-md-9 > div.content > table:nth-child(19) > tbody > tr:nth-child(1) > td > div,信用金庫,兵庫県,1691,0.02,False,True
+2024-06-09,但馬信用金庫,https://www.tanshin.co.jp/rate/,#mainCon > table:nth-child(23) > tbody > tr:nth-child(2) > td,信用金庫,兵庫県,1692,0.02,False,True
+2024-06-09,西兵庫信用金庫,https://www.shinkin.co.jp/nisisin/kinri/index.html,#yokin > div:nth-child(15) > table > tbody > tr > td > span,信用金庫,兵庫県,1694,0.02,False,True
+2024-06-09,中兵庫信用金庫,https://www.nakashin.co.jp/CGI/interest/index.cgi,,信用金庫,兵庫県,1695,,,False
+2024-06-09,但陽信用金庫,https://www.tanyo-shinkin.co.jp/rate/yokin.php,#rateList_other > div > table:nth-child(4) > tbody > tr:nth-child(3) > td:nth-child(2),信用金庫,兵庫県,1696,0.02,False,True
+2024-06-09,鳥取信用金庫,https://www.shinkin.co.jp/torishin/yokin_kinri.html,body > main > div > div.row > div.col-lg-9.order-lg-2 > table:nth-child(18) > tbody > tr:nth-child(1) > td,信用金庫,鳥取県,1701,0.02,False,True
+2024-06-09,米子信用金庫,https://www.shinkin.co.jp/yonago/kinri/107/,#content > div.contentBody > table:nth-child(24) > tbody > tr:nth-child(1) > td:nth-child(2),信用金庫,鳥取県,1702,0.02,False,True
+2024-06-09,倉吉信用金庫,https://www.kurashin.co.jp/kinri/page152,#main > div > div > table:nth-child(13) > tbody > tr:nth-child(2) > td,信用金庫,鳥取県,1703,0.02,False,True
+2024-06-09,しまね信用金庫,https://www.shimane-shinkin.co.jp/misc/interest-rates-and-fees/ir-deposit/,#post-content > table:nth-child(18) > tbody > tr > td,信用金庫,島根県,1710,0.02,False,True
+2024-06-09,昭和信用金庫,https://www.shinkin.co.jp/showa/individual/rate/index.html,#main > div:nth-child(3) > div > div > table.c-table.c-table__mt.c-table__full > tbody > tr:nth-child(1) > td:nth-child(3),信用金庫,東京都,1345,0.02,False,True
+2024-06-09,目黒信用金庫,https://www.shinkin.co.jp/meguro/fr_regulation.html,,信用金庫,東京都,1346,,,False
+2024-06-09,世田谷信用金庫,https://www.shinkin.co.jp/setagaya/service/rate.html,#contents > div > div.articleBox > section > div > table > tbody > tr:nth-child(33) > td:nth-child(2),信用金庫,東京都,1348,0.02,False,True
+2024-06-09,日本海信用金庫,https://nihonkaishinkin.co.jp/deposit.html,#contents00 > div.contents00 > div.contents > div > div:nth-child(7) > div:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,島根県,1711,0.02,False,True
+2024-06-09,島根中央信用金庫,https://www.shimanechuuou.co.jp/interest/deposit.html,#two-maincolumn-main > article > section.context.nosaidetext.f16 > div:nth-child(2) > table:nth-child(1) > tbody > tr.col-red > td:nth-child(1),信用金庫,島根県,1712,0.02,False,True
+2024-06-09,おかやま信用金庫,https://www.shinkin.co.jp/okayama/save/rate/,body > div.page_wrap > div > div.main_contents.rate > table:nth-child(10) > tbody > tr:nth-child(1) > td,信用金庫,岡山県,1732,0.02,True,True
+2024-06-09,水島信用金庫,https://www.mizushin.co.jp/07.html,#outer > div.main > div:nth-child(7) > div > table > tbody > tr:nth-child(8) > td:nth-child(3),信用金庫,岡山県,1734,0.02,True,True
+2024-06-09,津山信用金庫,https://www.shinkin.co.jp/tsuyama/syohin/kinri/index.html,#yokin-kinri > table:nth-child(1) > tbody > tr > td:nth-child(2),信用金庫,岡山県,1735,0.02,True,True
+2024-06-09,玉島信用金庫,https://www.shinkin.co.jp/tamashima-sk/rate/,#uac-10 > div > div > div > div > div:nth-child(2) > div > table > tbody > tr:nth-child(2) > td,信用金庫,岡山県,1738,0.02,True,True
+2024-06-09,備北信用金庫,https://www.shinkin.co.jp/bihoku/kinri/kinri.html,#rate_table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,岡山県,1740,0.02,True,True
+2024-06-09,吉備信用金庫,https://www.shinkin.co.jp/kibi/interest/index.html,#charge > div > div:nth-child(3) > table:nth-child(2) > tbody > tr:nth-child(5) > td.gray,信用金庫,岡山県,1741,0.02,False,True
+2024-06-09,備前日生信用金庫,https://www.shinkin.co.jp/bizenhinase/_kinri/,#hutsu > table > tbody > tr > td,信用金庫,岡山県,1743,0.02,False,True
+2024-06-09,広島信用金庫,https://www.hiroshin.co.jp/_kinri/?no=tab1,#top > div > div > div.wrap-std > div:nth-child(2) > div > div:nth-child(16) > table > tbody > tr > td,信用金庫,広島県,1750,0.02,True,True
+2024-06-09,呉信用金庫,https://www.kure-shinkin.jp/_kinri/index.html,#yokin > div:nth-child(13) > table > tbody > tr > td,信用金庫,広島県,1752,0.02,False,True
+2024-06-09,しまなみ信用金庫,http://www.shimanami-shinkin.jp/attach/news/20240328.pdf,body > div > main > div.l-container > div > section > div > div > div.js-tab__contents > div:nth-child(1) > div > div:nth-child(2) > div.c-accordion.js-accordion.is-active > div > div > table > tbody > tr > td,信用金庫,広島県,1756,,True,False
+2024-06-09,広島みどり信用金庫,https://www.shinkin.co.jp/midori/kinri/,,信用金庫,広島県,1758,,,False
+2024-06-09,萩山口信用金庫,https://www.shinkin.co.jp/hagiyamaguchi/_kinri/index.html,,信用金庫,山口県,1780,,,False
+2024-06-09,西中国信用金庫,https://www.shinkin.co.jp/nishichugoku/other/deposit.php,#sec07 > table > tbody > tr:nth-child(1) > td,信用金庫,山口県,1781,0.02,True,True
+2024-06-09,東山口信用金庫,https://www.higashiyamaguchi-shinkin.co.jp/rate/riritsulist/,#wrapper > table:nth-child(4) > tbody > tr > td,信用金庫,山口県,1789,0.02,False,True
+2024-06-09,徳島信用金庫,https://www.shinkin.co.jp/tokusima/accumulate/ordinary.html,,信用金庫,徳島県,1801,,,False
+2024-06-09,阿南信用金庫,http://www.anan-shinkin.jp/_kinri/index.html,#content > table:nth-child(23) > tbody > tr:nth-child(1) > td,信用金庫,徳島県,1803,0.02,False,True
+2024-06-09,高松信用金庫,https://www.takashin.co.jp/_kinri/,body > div.page_content.container > div:nth-child(3) > table:nth-child(18) > tbody > tr > td,信用金庫,香川県,1830,0.02,False,True
+2024-06-09,観音寺信用金庫,http://www.kanshin.co.jp/interest-rates/index.html,#article > div > p:nth-child(3) > span > strong,信用金庫,香川県,1833,0.001,False,True
+2024-06-09,愛媛信用金庫,https://www.shinkin.co.jp/ehime/personal/kinri.html,#Left > table:nth-child(16) > tbody > tr:nth-child(2) > td:nth-child(1),信用金庫,愛媛県,1860,0.02,False,True
+2024-06-09,宇和島信用金庫,https://www.shinkin.co.jp/uwajima/kinri/,#kinri06 > div > div > table > tbody > tr > td,信用金庫,愛媛県,1862,0.02,False,True
+2024-06-09,東予信用金庫,http://www.toyoshinkin.co.jp/_kinri/index.html,#main > article > div.content > table:nth-child(12) > tbody > tr > td,信用金庫,愛媛県,1864,0.02,False,True
+2024-06-09,川之江信用金庫,https://www.kawanoe-shinkin.co.jp/tameru/comprehensive/,,信用金庫,愛媛県,1866,,,False
+2024-06-09,幡多信用金庫,https://www.shinkin.co.jp/hatashin/interest-fee/interest.html,body > main > section.main-content > section.unique > section:nth-child(1) > div:nth-child(20) > table > tbody > tr:nth-child(2) > td > p,信用金庫,高知県,1880,0.02,False,True
+2024-06-09,高知信用金庫,https://www.combank.co.jp/rate/index.html,body > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > table:nth-child(14) > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,高知県,1881,0.02,True,True
+2024-06-09,福岡信用金庫,https://www.fukuoka-shinkin.co.jp/interest.html,body > div.container > div.contents > div > div:nth-child(5) > table > tbody > tr:nth-child(1) > td,信用金庫,福岡県,1901,0.02,True,True
+2024-06-09,福岡ひびき信用金庫,https://www.fukuokahibiki.co.jp/rateslist/rate_yokyu.php,body > div.over-hidden > div > main > div.contents > div > div > section > div > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,福岡県,1903,0.02,False,True
+2024-06-09,大牟田柳川信用金庫,https://www.shinkin.co.jp/omuta/interest/pdf/yokin.pdf,,信用金庫,福岡県,1908,,,False
+2024-06-09,筑後信用金庫,https://www.shinkin.co.jp/chikugo/kinri.shtml,,信用金庫,福岡県,1909,,,False
+2024-06-09,東京信用金庫,https://www.tokyo-shinkin.co.jp/rate/index.html,body > div > div > div.col-sm-9.pb20px > div:nth-child(19) > table > tbody > tr:nth-child(1) > td:nth-child(2),信用金庫,東京都,1349,0.02,True,True
+2024-06-09,城北信用金庫,https://www.johokubank.jp/product/service/rates.html,#contents > section:nth-child(4) > div > div:nth-child(6) > div:nth-child(1) > table > tbody > tr:nth-child(2) > td,信用金庫,東京都,1351,0.02,False,True
+2024-06-09,瀧野川信用金庫,https://www.shinkin.co.jp/takishin/info/rate.html,#mainContents > table:nth-child(12) > tbody > tr:nth-child(2) > td,信用金庫,東京都,1352,0.02,True,True
+2024-06-09,飯塚信用金庫,https://iishin.jp/rate/,#scont > article > div > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(2),信用金庫,福岡県,1910,0.02,False,True
+2024-06-09,田川信用金庫,https://www.tagawashinkin.co.jp/services/rates/,#post-102 > div:nth-child(3) > table:nth-child(7) > tbody > tr > td:nth-child(1) > table:nth-child(2) > tbody > tr:nth-child(1) > td,信用金庫,福岡県,1913,0.02,False,True
+2024-06-09,大川信用金庫,https://www.shinkin.co.jp/ookawa/yokin_kinri.html,#contents > table:nth-child(12) > tbody > tr:nth-child(2) > td,信用金庫,福岡県,1917,0.02,False,True
+2024-06-09,遠賀信用金庫,https://www.shinkin.co.jp/onga/_kinri/index.html,#sec01 > table:nth-child(43) > tbody > tr:nth-child(1) > td > p,信用金庫,福岡県,1920,0.02,True,True
+2024-06-09,唐津信用金庫,https://www.karashin.co.jp/pages/117/,,信用金庫,佐賀県,1930,,,False
+2024-06-09,佐賀信用金庫,http://www.sagashin.co.jp/_kinri/index,#main > div:nth-child(7) > table > tbody > tr:nth-child(2) > td:nth-child(1) > span,信用金庫,佐賀県,1931,0.02,False,True
+2024-06-09,伊万里信用金庫,http://www.imarishinkin.co.jp/_kinri-lone/index.html,,信用金庫,佐賀県,1932,,,False
+2024-06-09,九州ひぜん信用金庫,https://www.qhize.com/deposit/,,信用金庫,佐賀県,1933,,,False
+2024-06-09,たちばな信用金庫,https://www.tachibana-shinkin.jp/interest/yokin,body > main > article > div.c-page-sub__content-detail > div.c-page-sub__content-main > div > div > div:nth-child(9) > div > div > div > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,長崎県,1942,0.001,False,True
+2024-06-09,熊本信用金庫,https://www.kumamoto-shinkin.jp/deposit/,,信用金庫,熊本県,1951,,,False
+2024-06-09,熊本第一信用金庫,https://www.daiichishinkin.co.jp/rate/saving.php,body > main > article > div.c-page-sub__content-main > section:nth-child(3) > div > table > tbody > tr > td,信用金庫,熊本県,1952,0.02,False,True
+2024-06-09,熊本中央信用金庫,https://www.kumachu.jp/deposits/yokin-kinri.html,#container > div > div.content_body.show > div > table:nth-child(18) > tbody > tr > td,信用金庫,熊本県,1954,0.02,True,True
+2024-06-09,天草信用金庫,https://www.shinkin.co.jp/amakusa/rate/deposit.php,body > div > div > main > article > div.c-page-sub__content-main > div > div:nth-child(18) > div > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,熊本県,1955,0.02,False,True
+2024-06-09,大分信用金庫,https://www.shinkin.co.jp/oitashinkin/interest/,#wrapper > div.container > div.contents > div > ul > li.box330.fl > table > tbody > tr:nth-child(1) > td,信用金庫,大分県,1960,0.02,True,True
+2024-06-09,大分みらい信用金庫,https://www.oitamirai.co.jp/rate/yokin/,#tablepress-37 > tbody > tr > td.column-2,信用金庫,大分県,1962,0.02,False,True
+2024-06-09,日田信用金庫,https://www.shinkin.co.jp/hitashin/goods/goods.html,,信用金庫,大分県,1968,,,False
+2024-06-09,宮崎第一信用金庫,https://www.miyasin.co.jp/rates/,body > main > section > figure:nth-child(9) > table > tbody > tr:nth-child(1) > td,信用金庫,宮崎県,1980,0.02,False,True
+2024-06-09,延岡信用金庫,http://www.nobeshin.jp/yokinkinrikaitei.pdf,,信用金庫,宮崎県,1982,,,False
+2024-06-09,高鍋信用金庫,https://www.takanabe-shinkin.jp/rate/index.html,#page > div.main_wrap > div.table_wrap05 > div:nth-child(15) > table > tbody > tr:nth-child(1) > td,信用金庫,宮崎県,1985,0.02,True,True
+2024-06-09,鹿児島信用金庫,https://kashin.co.jp/service/post_3.html,#contents > div.input.cat_service > div.section > div > div.right > table:nth-child(1) > tbody > tr:nth-child(1) > td,信用金庫,鹿児島県,1990,0.02,False,True
+2024-06-09,鹿児島相互信用金庫,https://www.shinkin.co.jp/kasosin/info/kinri_save.html,#kinri > section > div > table > tbody > tr:nth-child(1) > td,信用金庫,鹿児島県,1991,0.02,True,True
+2024-06-09,奄美大島信用金庫,https://www.amamishinkin.co.jp/img/kinri_kaitei.pdf,,信用金庫,鹿児島県,1993,,,False
+2024-06-09,コザ信用金庫,https://www.shinkin.co.jp/kozashinkin/_kinri/,#main > article > div.content > table:nth-child(18) > tbody > tr:nth-child(1) > td,信用金庫,沖縄県,1996,0.02,False,True
+2024-06-09,巣鴨信用金庫,https://www.sugamo.co.jp/rate/,#mainBody > div.container > div > section:nth-child(3) > section:nth-child(3) > div.table-layout > table > tbody > tr > td,信用金庫,東京都,1356,0.02,False,True
+2024-06-09,青梅信用金庫,https://www.aosyn.co.jp/kojin/tameru/kinri/yokin.html,#yokinkinri > table > tbody > tr:nth-child(2) > td:nth-child(3),信用金庫,東京都,1358,0.01,True,True
+2024-06-09,多摩信用金庫,https://www.tamashin.jp/kinri/index.html,#\30 1 > tbody > tr:nth-child(1) > td,信用金庫,東京都,1360,0.02,True,True
+2024-06-09,新潟信用金庫,https://www.niigata-shinkin.co.jp/info/interest/,#main > section > div:nth-child(13) > table > tbody > tr > td:nth-child(1),信用金庫,新潟県,1370,0.02,False,True
+2024-06-09,長岡信用金庫,https://www.shinkin.co.jp/nagaoka/_kinri/,#contents > div > div.l-main > section > table:nth-child(16) > tbody > tr:nth-child(6) > td:nth-child(2),信用金庫,新潟県,1371,0.02,False,True
+2024-06-09,三条信用金庫,https://www.shinkin.co.jp/sanshin/about/rate/,body > div.p-wrapper > main > article > div.l-entryWrapper > div > section:nth-child(1) > div:nth-child(20) > table > tbody > tr:nth-child(1) > td,信用金庫,新潟県,1373,0.02,True,True
+2024-06-09,新発田信用金庫,https://www.shibata-shinkin.co.jp/wordpress/wp-content/uploads/2024/03/20240329_yokinkaitei.pdf,,信用金庫,新潟県,1374,,,False
+2024-06-09,柏崎信用金庫,https://ksbank.jp/public/rate.php,#rate > table > tbody > tr:nth-child(2) > td,信用金庫,新潟県,1375,0.02,True,True
+2024-06-09,上越信用金庫,https://www.joetsu-shinkin.jp/interest/,#content_wrap > div:nth-child(16) > table > tbody > tr:nth-child(2) > td,信用金庫,新潟県,1376,0.02,False,True
+2024-06-09,新井信用金庫,https://www.shinkin.co.jp/arai/_kinri/index.html,#content > table:nth-child(27) > tbody > tr > td:nth-child(1),信用金庫,新潟県,1377,0.02,False,True
+2024-06-09,村上信用金庫,https://www.murakami-shinkin.com/attention/20240405_kinri_hikiage.pdf,,信用金庫,新潟県,1379,,,False
+2024-06-09,加茂信用金庫,https://www.shinkin.co.jp/kamo/_kinri/,#kinri01 > div:nth-child(10) > table > tbody > tr:nth-child(2) > td:nth-child(2),信用金庫,新潟県,1380,0.02,False,True
