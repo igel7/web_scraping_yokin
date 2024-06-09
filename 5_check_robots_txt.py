@@ -33,8 +33,8 @@ os.chdir('C:\\Users\\ryasu\\Documents\\GitHub\\web_scraping')
 banks_df = pd.read_csv('first_check_result.csv')
 
 # 処理する行数と開始行数を設定
-start_row = 0  # 開始行数（0-indexed）
-num_rows = 384  # 処理する行数
+start_row = 167  # 開始行数（0-indexed）
+num_rows = 384 - 166  # 処理する行数
 batch_size = 3  # バッチサイズ
 
 # tmpフォルダの作成
