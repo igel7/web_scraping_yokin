@@ -5,6 +5,7 @@
 |1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|
 |:--|:--|:--|:--|
 |seleniumパッケージを使って、グーグルで銀行名と預金金利を検索し、最初の検索結果のURLを自動的に収集する|URLのリストから、10個ずつブラウザで自動的に開く（CSSセレクターを効率的に集めるため）|URLとCSSセレクタのリストから、スクレイピングがうまくいくかを試す|本番用ファイル|
+|banks_list.csvから銀行名を読み取って、banks_output.csvに銀行名とURLの一覧を出力する|banks_output.csvからURLを読み取って開く（それを使って手動でCSSセレクターを収集し、banks_list_ok.csvを作成する）|banks_list_ok.csvからURLとCSSセレクタのリストを読み取り、スクレイピングを実施し、その結果をfirst_check_result2.csvに出力する|first_check_result.csvを読み取って、結果をyokin_rate.xlsxに付記する（ファイルがなければ作成する）|
 
 # 補足的な説明
 ## タスクスケジューラへの登録方法
