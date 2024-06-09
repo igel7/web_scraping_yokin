@@ -28,7 +28,12 @@ def remove_muda(text):
     text = re.sub(r'\（.*?\）', '', text)
     # 数字以外の部分を削除
     text = re.sub(r'[^0-9.]', '', text)
-    return text
+    # 数値に変換
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
 
 def get_rate(bank_name, url, selector, use_js=False):
     try:
@@ -66,6 +71,9 @@ print("取得対象金融機関の状況: ")
 for t in type_totals.index:
     print(f"{t}: {type_counts.get(t, 0)}/{type_totals[t]} ({(type_counts.get(t, 0) / type_totals[t]) * 100:.2f}%)")
 
+# 全体の行数を取得
+total_rows = len(success_df)
+
 # 対象となる金融機関を順番にスクレイピング
 results = []
 
@@ -89,7 +97,7 @@ for idx, row in success_df.iterrows():
     })
 
     # コンソールに進行状況を出力
-    print(f"Processing {idx + 1}/{len(success_df)}: {bank_name} - {'Success' if success else 'Failed'}")
+    print(f"Processing {idx + 1}/{total_rows}: {bank_name} - {'Success' if success else 'Failed'}")
 
 
 
