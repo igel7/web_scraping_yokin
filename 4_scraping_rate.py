@@ -9,7 +9,7 @@ import re
 import os
 
 # 作業ディレクトリを設定
-target_dir = r"C:\Users\ryasu\Documents\GitHub\web_scraping"
+target_dir = r"C:\Users\ryasu\Documents\GitHub\web_scraping_yokin"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
