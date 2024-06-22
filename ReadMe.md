@@ -2,13 +2,13 @@
 ## ファイル構成
 1～4の.pyファイルがあるが、実際に毎日実行するのは4だけ。
 1～3は、実行するための前処理用のファイル。
-|ファイル|1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|
-|:--:|:--|:--|:--|:--|
+|ファイル|1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|5_check_robots_txt.py|
+|:--:|:--|:--|:--|:--|:--|
 |機能|seleniumパッケージを使って、グーグルで銀行名と預金金利を検索し、最初の検索結果のURLを自動的に収集する|URLのリストから、10個ずつブラウザで自動的に開く（CSSセレクターを効率的に集めるため）|URLとCSSセレクタのリストから、スクレイピングがうまくいくかを試す|本番用ファイル|
-|入出力ファイル|banks_list.csvから銀行名を読み取って、banks_output.csvに銀行名とURLの一覧を出力する|banks_output.csvからURLを読み取って開く（それを使って手動でCSSセレクターを収集し、banks_list_ok.csvを作成する）|banks_list_ok.csvからURLとCSSセレクタのリストを読み取り、スクレイピングを実施し、その結果をfirst_check_result2.csvに出力する|first_check_result.csvを読み取って、結果をyokin_rate.xlsxに付記する（ファイルがなければ作成する）|
+|入出力ファイル|banks_list.csvから銀行名を読み取って、banks_output.csvに銀行名とURLの一覧を出力する|banks_output.csvからURLを読み取って開く（それを使って手動でCSSセレクターを収集し、banks_list_ok.csvを作成する）|banks_list_ok.csvからURLとCSSセレクタのリストを読み取り、スクレイピングを実施し、その結果をfirst_check_result2.csvに出力する|first_check_result.csvを読み取って、結果をyokin_rate.xlsxに付記する（ファイルがなければ作成する）|対象金融機関のウェブサイトのrobots.txtを確認し、クローリングを許可しているかどうかを自動で確認する|
 
 # 補足的な説明
-## タスクスケジューラへの登録方法
+## タスクスケジューラへのタスク登録方法（ここでは、4.scraping_rate.pyをタスク登録することを想定しています）
 - タスクスケジューラを開く:
     - Windowsキー + Sを押して「タスクスケジューラ」と入力し、タスクスケジューラを開きます。
 
@@ -35,7 +35,7 @@
 - 完了:
     - 「次へ」をクリックして、「完了」をクリックします。
 
-## パスの通し方
+## パスの通し方（タスクスケジューラが動くようにするためには、当然ながらpythonのパスを通しておかないといけないので、その方法）
 - WinPythonのインストールディレクトリを開く:
     - WinPythonのインストールパスを確認します。例えば、C:\Users\ryasu\WinPython-3.12.xのようになっているかもしれません。
     - Pythonの実行ファイルがあるフォルダ（通常はpython-3.12.x.amd64など）を探します。
