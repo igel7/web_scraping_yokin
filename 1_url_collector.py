@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # 作業ディレクトリを設定
-target_dir = r"C:\Users\ryasu\Documents\GitHub\web_scraping_yokin"
+target_dir = r"your working directory"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
@@ -16,18 +16,18 @@ input_csv = 'banks_list.csv'  # 入力CSVファイルの名前
 output_csv = 'banks_output.csv'  # 出力CSVファイルの名前
 tmp_dir = os.path.join(target_dir, 'tmp')
 
-# 一時フォルダを作成
+# make temp directory
 if not os.path.exists(tmp_dir):
     os.makedirs(tmp_dir)
 
 banks_df = pd.read_csv(input_csv, encoding='SHIFT_JIS')
 
-# セットアップ
+# setup
 options = Options()
 options.headless = True
 driver = webdriver.Chrome(options=options)
 
-# 検索してURLを取得する関数
+# Get URLs by keyword search at google
 def fetch_url(bank_name):
     try:
         driver.get('https://www.google.com')
@@ -49,7 +49,7 @@ def fetch_url(bank_name):
         print(f"Error fetching URL for {bank_name}: {e}")
         return None
 
-# 各銀行名に対してURLを取得
+# get URLs of banks listed in csv
 urls = []
 batch_size = 5
 for index, row in banks_df.iterrows():
@@ -57,10 +57,10 @@ for index, row in banks_df.iterrows():
     url = fetch_url(bank_name)
     urls.append(url)
     
-    # 現在の進捗を表示
+    # current status on console
     print(f"{index + 1}/{len(banks_df)}: {bank_name} の URL: {url}")
     
-    # バッチごとに一時ファイルに保存
+    # batch jobs
     if (index + 1) % batch_size == 0 or (index + 1) == len(banks_df):
         batch_df = banks_df.iloc[index - (index % batch_size):index + 1]
         batch_df['url'] = urls[-batch_df.shape[0]:]
@@ -68,10 +68,10 @@ for index, row in banks_df.iterrows():
         batch_df.to_csv(batch_file, index=False)
         print(f"Batch saved to {batch_file}")
 
-# ブラウザを閉じる
+# close browser
 driver.quit()
 
-# 一時ファイルを結合
+# make result file from batch files
 all_batches = []
 for batch_file in sorted(os.listdir(tmp_dir)):
     if batch_file.endswith('.csv'):

@@ -4,23 +4,23 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 
-# 作業ディレクトリの設定
-target_dir = r"C:\Users\ryasu\Documents\GitHub\web_scraping_yokin"
+# set working directory
+target_dir = r"your working directory"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
-# CSVファイルの読み込み
+# import CSV file
 input_csv = 'banks_output.csv'  # 入力CSVファイルの名前
 banks_df = pd.read_csv(input_csv)
 
-# グローバル変数としてdriverを宣言
+# driver as global variant
 driver = webdriver.Chrome(options=options)
 
-# セットアップ
+# setup
 options = Options()
 options.headless = False  # ヘッドレスモードをオフにする（ブラウザを表示する）
 
-# URLを10個ずつ開く関数
+# open URL 10 by 10
 def open_urls_in_batches(urls, batch_size=10):
     global driver
     for i in range(0, len(urls), batch_size):
@@ -33,11 +33,11 @@ def open_urls_in_batches(urls, batch_size=10):
         driver.quit()
         driver = webdriver.Chrome(options=options)  # 新しいブラウザウィンドウを開く
 
-# URLのリストを取得
+# import URL list
 urls = banks_df['url'].dropna().tolist()  # NaN値（URLが取得できなかった行）を除外する
 
-# URLを10個ずつ開く
+# open 10 URLs at once
 open_urls_in_batches(urls, batch_size=10)
 
-# 最後にドライバを閉じる
+# quit browser at last
 driver.quit()

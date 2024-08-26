@@ -8,14 +8,14 @@ import openpyxl
 import re
 import os
 
-# 作業ディレクトリを設定
+# set working directory
 target_dir = r"C:\Users\ryasu\Documents\GitHub\web_scraping_yokin"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
 
 def remove_muda(text):
-    # 削除したい文字のリスト
+    # letters to remove
     characters_to_remove = ["%", " ", "年", "％", "　", "(", ")", "金利", "普通預金", "Ç¯"]
     for char in characters_to_remove:
         text = text.replace(char, "")
@@ -102,7 +102,6 @@ for idx, row in success_df.iterrows():
 
 
 
-# 結果をエクセルファイルに追加
 results_df = pd.DataFrame(results)
 
 excel_file = 'yokin_rate.xlsx'

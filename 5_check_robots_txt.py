@@ -7,7 +7,7 @@ from datetime import datetime
 
 def check_robots_txt(url):
     """
-    指定されたURLのrobots.txtをチェックし、クロールが許可されているかどうかを判断する。
+    check robots.txt at URLs listed and check if scraping is allowed
     """
     try:
         parsed_url = urlparse(url)
@@ -26,23 +26,23 @@ def check_robots_txt(url):
         print(f"Error fetching robots.txt for {url}: {e}")
         return None, "Error"
 
-# 作業ディレクトリの設定
-os.chdir('C:\\Users\\ryasu\\Documents\\GitHub\\web_scraping')
+# working directory
+os.chdir('your working directory')
 
-# 銀行リストの読み込み
+# import banks' list
 banks_df = pd.read_csv('first_check_result.csv')
 
 # 処理する行数と開始行数を設定
-start_row = 167  # 開始行数（0-indexed）
-num_rows = 384 - 166  # 処理する行数
-batch_size = 3  # バッチサイズ
+start_row = 167  # start row (0-indexed）
+num_rows = 384 - 166  # jobs to go
+batch_size = 3  # batch size
 
-# tmpフォルダの作成
+# make tmp directory
 tmp_dir = 'tmp'
 if not os.path.exists(tmp_dir):
     os.makedirs(tmp_dir)
 
-# 結果を格納するDataFrameの作成
+# make DataFrame for result 
 results = pd.DataFrame(columns=['bank_name', 'url', 'robots_txt_url', 'crawl_status'])
 
 # 指定された範囲の行について処理を行う
@@ -50,10 +50,10 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
     bank_name = row['bank_name']
     url = row['url']
     
-    # robots.txtのチェック
+    # check robots.txt here
     robots_txt_url, status = check_robots_txt(url)
     
-    # 結果をDataFrameに追加
+    # add result to DataFrame
     result_row = pd.DataFrame([{
         'bank_name': bank_name,
         'url': url,
@@ -62,23 +62,23 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
     }])
     results = pd.concat([results, result_row], ignore_index=True)
     
-    # コンソールに進行状況を出力
+    # show status on console
     print(f"Processing {idx}/{len(banks_df)}: {bank_name} - {'Crawl allowed' if status else 'Crawl disallowed' if status is False else status}")
 
-    # バッチごとに一時ファイルに保存
+    # batch jobs
     if idx % batch_size == 0:
         batch_file = os.path.join(tmp_dir, f'batch_{idx // batch_size}.csv')
         results.to_csv(batch_file, index=False)
         print(f"Batch saved to {batch_file}")
         results = pd.DataFrame(columns=['bank_name', 'url', 'robots_txt_url', 'crawl_status'])
 
-# 残りの結果を保存
+# the lest
 if not results.empty:
     batch_file = os.path.join(tmp_dir, f'batch_{(idx // batch_size) + 1}.csv')
     results.to_csv(batch_file, index=False)
     print(f"Batch saved to {batch_file}")
 
-# 一時ファイルを結合
+# put all the batch files together
 all_batches = []
 for batch_file in sorted(os.listdir(tmp_dir)):
     if batch_file.endswith('.csv'):
@@ -87,7 +87,7 @@ for batch_file in sorted(os.listdir(tmp_dir)):
 
 final_df = pd.concat(all_batches, ignore_index=True)
 
-# 結果を表示
+# show result
 print(final_df)
 
 # 最終結果をCSVに保存

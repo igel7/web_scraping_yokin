@@ -9,16 +9,16 @@ import re
 import os
 
 # 作業ディレクトリを設定
-target_dir = r"C:\\Users\\ryasu\\Documents\\GitHub\\web_scraping_yokin"
+target_dir = r"your working directory"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
 def remove_muda(text):
-    # 削除したい文字のリスト
+    # letters to be removed
     characters_to_remove = ["%", " ", "年", "％", "\u3000", "(", ")", "金利", "普通預金", "Ç¯"]
     for char in characters_to_remove:
         text = text.replace(char, "")
-    # 全角数字を半角に変換
+    # Convert full-width characters(全角) to half-width(半角) characters
     text = text.translate(str.maketrans({
         "０": "0", "１": "1", "２": "2", "３": "3", "４": "4", 
         "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", 
@@ -27,7 +27,7 @@ def remove_muda(text):
     text = re.sub(r'\\（.*?\\）', '', text)
     # 数字以外の部分を削除
     text = re.sub(r'[^0-9.]', '', text)
-    # 数値に変換
+    # change string to number
     try:
         return float(text)
     except ValueError:
@@ -65,14 +65,14 @@ success_df = df[df['success'] == True]
 type_counts = success_df['type'].value_counts()
 type_totals = df['type'].value_counts()
 
-print("取得対象金融機関の状況: ")
+print("Current Status: ")
 for t in type_totals.index:
     print(f"{t}: {type_counts.get(t, 0)}/{type_totals[t]} ({(type_counts.get(t, 0) / type_totals[t]) * 100:.2f}%)")
 
-# 全体の行数を取得
+# Get total target number
 total_rows = len(success_df)
 
-# 対象となる金融機関を順番にスクレイピング
+# Scraping URLs one by one
 results = []
 
 for idx, row in success_df.iterrows():
@@ -94,10 +94,10 @@ for idx, row in success_df.iterrows():
         'success': success
     })
 
-    # コンソールに進行状況を出力
+    # show status on consol
     print(f"Processing {idx + 1}/{total_rows}: {bank_name} - {'Success' if success else 'Failed'}")
 
-# 結果をエクセルファイルに追加
+# result df
 results_df = pd.DataFrame(results)
 
 excel_file = 'yokin_rate_edge.xlsx'

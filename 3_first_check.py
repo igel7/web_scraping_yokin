@@ -7,22 +7,22 @@ from selenium.webdriver.chrome.options import Options
 import os
 
 # 作業ディレクトリの設定
-os.chdir('C:\\Users\\ryasu\\Documents\\GitHub\\web_scraping')
+os.chdir('your working directory')
 print("Changed Directory:", os.getcwd())
 
 def get_rate(bank_name, url, selector):
     try:
         response = requests.get(url)
-        response.raise_for_status()  # HTTPエラーをチェック
+        response.raise_for_status()  # Check HTTP error
         soup = BeautifulSoup(response.content, 'html.parser')
         target = soup.select_one(selector)
         if target:
-            return remove_muda(target.get_text()), False, True  # JS未使用, 取得成功
+            return remove_muda(target.get_text()), False, True  # No Java Script, Got data
         else:
-            return None, False, False  # JS未使用, 取得失敗
+            return None, False, False  # No Java Script, Failed to get data
     except Exception as e:
         print(f"Error fetching rate for {bank_name} without JS: {e}")
-        return None, False, False  # JS未使用, 取得失敗
+        return None, False, False  # No Java Script, Failed to get data
 
 def get_rate_js(bank_name, url, selector):
     try:
@@ -35,12 +35,12 @@ def get_rate_js(bank_name, url, selector):
         target = soup.select_one(selector)
         driver.quit()
         if target:
-            return remove_muda(target.get_text()), True, True  # JS使用, 取得成功
+            return remove_muda(target.get_text()), True, True  # Use Java Script, Got data
         else:
-            return None, True, False  # JS使用, 取得失敗
+            return None, True, False  # Use Java Script, Failed to get data
     except Exception as e:
         print(f"Error fetching rate for {bank_name} with JS: {e}")
-        return None, True, False  # JS使用, 取得失敗
+        return None, True, False  # Use Java Script, Failed to get data
 
 def remove_muda(text):
     characters_to_remove = ["%", " ", "年", "％", "　"]
@@ -48,13 +48,13 @@ def remove_muda(text):
         text = text.replace(char, "")
     return text
 
-# 銀行リストの読み込み
+# import banks' list
 banks_df = pd.read_csv('banks_list_ok.csv', encoding='SHIFT_JIS')
 
-# 処理する行数と開始行数を設定
-start_row = 0  # 開始行数（0-indexed）
-num_rows = 170  # 処理する行数
-batch_size = 3  # バッチサイズ
+# how many data you do
+start_row = 0  # start row（0-indexed）
+num_rows = 170  # job number to go
+batch_size = 3  # batch size
 
 # tmpフォルダの作成
 tmp_dir = 'tmp'
@@ -72,7 +72,7 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
     js = row['js']
     
     if pd.isna(selector) or not selector.strip():
-        # セレクターが空欄の場合はスキップ
+        # Skip if CSS selector is blank
         rate, js, success = None, None, False
         print(f"[{idx}/{len(banks_df)}] {bank_name}: セレクターが空欄のためスキップ")
     else:
@@ -86,7 +86,7 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
             else:
                 print(f"[{idx}/{len(banks_df)}] {bank_name}: 取得失敗")
     
-    # 結果をDataFrameに追加
+    # add result to result data frame
     result_row = pd.DataFrame([{
         'date': datetime.now().strftime('%Y-%m-%d'),
         'bank_name': bank_name,
@@ -101,20 +101,20 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
     }])
     results = pd.concat([results, result_row], ignore_index=True)
     
-    # バッチごとに一時ファイルに保存
+    # batch job
     if idx % batch_size == 0:
         batch_file = os.path.join(tmp_dir, f'batch_{idx // batch_size}.csv')
         results.to_csv(batch_file, index=False)
         print(f"Batch saved to {batch_file}")
         results = pd.DataFrame(columns=['date', 'bank_name', 'url', 'selector', 'type', 'pref', 'code', 'interest_rate', 'js', 'success'])
 
-# 残りの結果を保存
+# the lest
 if not results.empty:
     batch_file = os.path.join(tmp_dir, f'batch_{(idx // batch_size) + 1}.csv')
     results.to_csv(batch_file, index=False)
     print(f"Batch saved to {batch_file}")
 
-# 一時ファイルを結合
+# put all the batches
 all_batches = []
 for batch_file in sorted(os.listdir(tmp_dir)):
     if batch_file.endswith('.csv'):
@@ -123,13 +123,12 @@ for batch_file in sorted(os.listdir(tmp_dir)):
 
 final_df = pd.concat(all_batches, ignore_index=True)
 
-# 結果を表示
+# show result
 print(final_df)
 
-# 必要に応じてCSVに保存する関数
+# save result df to csv if needed
 def save_results_to_csv(results, filename='first_check_result2.csv'):
     results.to_csv(filename, index=False)
     print(f"Results saved to {filename}")
 
-# 結果をCSVに保存（この行はコメントアウトしています。実行する場合はコメントを外してください。）
 save_results_to_csv(final_df)
