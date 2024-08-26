@@ -16,8 +16,9 @@
 - Uses BeautifulSoup for web pages not using JavaScript, and Selenium to launch a browser and retrieve information from pages that do use JavaScript. This avoids reliance solely on the slower Selenium, balancing speed and comprehensiveness.
 
 ## File Structure
-- There are .py files 1 through 4, but only 4 is executed daily.
+- There are .py files 1 through 5, but only 4 is executed daily.
 - Files 1 through 3 are for preprocessing necessary to run the program.
+- It is assumed that the user creates the CSV files themselves; however, actual usage examples are stored in the ref folder for reference.
 
 | File | Function |
 |:-----|:---------|
