@@ -19,9 +19,15 @@
 - There are .py files 1 through 4, but only 4 is executed daily.
 - Files 1 through 3 are for preprocessing necessary to run the program.
 
-|File|1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|5_check_robots_txt.py|
-|:---:|:---|:---|:---|:---|:---|
-|Function|Uses Selenium to search Google for bank names and deposit interest rates, automatically collecting the first result URL|Automatically opens URLs from the list in batches of 10 (to efficiently gather CSS selectors)|Tests if scraping works from the list of URLs and CSS selectors|Production file|Checks if the target site is allowed for crawling|
+| File | Function |
+|:-----|:---------|
+| 1_url_collector.py | Uses Selenium to search Google for bank names and deposit interest rates, automatically collecting the first result URL. Reads bank names from `banks_list.csv` and outputs a list of bank names and URLs to `banks_output.csv`. |
+| 2_open_url.py | Opens URLs from the list in batches of 10 in a browser (to efficiently gather CSS selectors). Reads URLs from `banks_output.csv`, opens them, and manual CSS selector collection is assumed to create `banks_list_ok.csv`. |
+| 3_first_check.py | Tests if scraping works from the list of URLs and CSS selectors. Reads URL and CSS selector list from `banks_list_ok.csv`, performs scraping, and outputs the results to `first_check_result2.csv`. |
+| 4_scraping_rate.py | Production file. Reads the results from `first_check_result.csv` and appends them to `yokin_rate.xlsx` (creates the file if it does not exist). |
+| 5_check_robots_txt.py | Checks if the target site is allowed for crawling. Automatically verifies the target financial institution's website robots.txt to check if crawling is permitted. |
+
+
 
 # Additional Instructions
 ## How to Register a Task with Task Scheduler (assuming registration of 4.scraping_rate.py)
