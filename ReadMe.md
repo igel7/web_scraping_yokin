@@ -1,75 +1,75 @@
-# このレポジトリの説明
-## 基本的機能
-- 日本にある全金融機関のHPから、適時のタイミングで普通預金金利の情報を取得し、エクセルファイルに蓄積していく。
-- 具体的には、以下の3段階の機能をカバーしている。  
-### 1.前処理
-- A.自分の調べたい金融機関名をcsvファイルに並べておけば、自動的にその金融機関名＋「普通預金金利」でGoogleキーワード検索を実施し、最初にヒットするページのURLを一覧化する処理。  
-- B.一覧化したURLを10個ずつブラウザで開く処理（開いたら、CSSセレクタを手動で集めていくことを想定）。
-### 2.情報取得処理
-- URLとCSSセレクタの一覧のCSVファイルから、自動的に情報を取得する処理
-### 3.補足的機能
-- 対象ウェブページのrobots.txtを取得し、情報取得対象ディレクトリがクローリング許可されているかを自動的に確認する処理
+[日本語はこちら](ReadMe_ja.md)    
 
-## 技術上の工夫点
-- 最初に取得対象金融機関のCSSセレクタを全部集めるところはどうしても手動になってしまうが、そのURLの取得や、URLをブラウザで開くところを自動化することで、極力無駄な手間がかからないようにした。
-- Java Scriptが使われていないウェブページの情報取得はbeautiful soupを使い、使われているページはseleniumを使って実際にブラウザを起動させて情報取得するようにしている。これにより、処理に時間のかかるseleniumだけに依存せず、速さと網羅性を極力両立させるようにした。
+# Repository Description
+## Core Features
+- Collects ordinary deposit interest rate information from all financial institutions in Japan at appropriate times and stores it in an Excel file. Specifically, it covers the following three stages:
+### 1. Preprocessing
+- A. If you list the financial institutions you want to research in a CSV file, it automatically searches Google with the institution's name + "ordinary deposit interest rate" and lists the URL of the first page that appears.
+- B. Process to open the listed URLs in the browser in batches of 10 (it is assumed that CSS selectors will be collected manually).
+### 2. Information Acquisition
+- Automatically retrieves information from the CSV file of URLs and CSS selectors.
+### 3. Supplementary Features
+- Automatically checks if the target web page's robots.txt allows crawling for the information acquisition directories.
 
-## ファイル構成
-- 1～4の.pyファイルがあるが、実際に毎日実行するのは4だけ。  
-- 1～3は、実行するための前処理用のファイル。
+## Technical Innovations
+- Although collecting all the CSS selectors of the target financial institutions must be done manually, automating the acquisition of URLs and the opening of these URLs in the browser minimizes unnecessary manual effort.
+- Uses BeautifulSoup for web pages not using JavaScript, and Selenium to launch a browser and retrieve information from pages that do use JavaScript. This avoids reliance solely on the slower Selenium, balancing speed and comprehensiveness.
 
-|ファイル|1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|5_check_robots_txt.py|
+## File Structure
+- There are .py files 1 through 4, but only 4 is executed daily.
+- Files 1 through 3 are for preprocessing necessary to run the program.
+
+|File|1_url_collector.py|2_open_url.py|3_first_check.py|4_scraping_rate.py|5_check_robots_txt.py|
 |:---:|:---|:---|:---|:---|:---|
-|機能|seleniumパッケージを使って、グーグルで銀行名と預金金利を検索し、最初の検索結果のURLを自動的に収集する|URLのリストから、10個ずつブラウザで自動的に開く（CSSセレクターを効率的に集めるため）|URLとCSSセレクタのリストから、スクレイピングがうまくいくかを試す|本番用ファイル|対象サイトがクローリング許可サイトか確認する|
-|入出力ファイル|banks_list.csvから銀行名を読み取って、banks_output.csvに銀行名とURLの一覧を出力する|banks_output.csvからURLを読み取って開く（それを使って手動でCSSセレクターを収集し、banks_list_ok.csvを作成する）|banks_list_ok.csvからURLとCSSセレクタのリストを読み取り、スクレイピングを実施し、その結果をfirst_check_result2.csvに出力する|first_check_result.csvを読み取って、結果をyokin_rate.xlsxに付記する（ファイルがなければ作成する）|対象金融機関のウェブサイトのrobots.txtを確認し、クローリングを許可しているかどうかを自動で確認する|
+|Function|Uses Selenium to search Google for bank names and deposit interest rates, automatically collecting the first result URL|Automatically opens URLs from the list in batches of 10 (to efficiently gather CSS selectors)|Tests if scraping works from the list of URLs and CSS selectors|Production file|Checks if the target site is allowed for crawling|
 
-# 補足的な説明
-## タスクスケジューラへのタスク登録方法（ここでは、4.scraping_rate.pyをタスク登録することを想定しています）
-- タスクスケジューラを開く:
-    - Windowsキー + Sを押して「タスクスケジューラ」と入力し、タスクスケジューラを開きます。
+# Additional Instructions
+## How to Register a Task with Task Scheduler (assuming registration of 4.scraping_rate.py)
+- Open Task Scheduler:
+    - Press Windows key + S, type "Task Scheduler," and open it.
 
-- 「タスクの作成」を選択:
-    - 右側の「基本タスクの作成」をクリックします。
-    - 「タスクの作成」ウィザードが開きます。
+- Select "Create Task":
+    - Click "Create Basic Task" on the right side.
+    - The "Create Task" wizard opens.
 
-- タスクの名前と説明を入力:
-    - タスクの名前を入力し、必要なら説明を入力します（例: Daily Python Script）。
-    - 「次へ」をクリックします。
+- Enter task name and description:
+    - Enter a task name and, if necessary, a description (e.g., Daily Python Script).
+    - Click "Next."
 
-- トリガーの設定:
-    - 「毎日」を選択し、「次へ」をクリックします。
-    - スクリプトの実行開始日時と時間を設定します（例: 明日の朝6時に設定）。
-    - 「次へ」をクリックします。
+- Set the trigger:
+    - Select "Daily" and click "Next."
+    - Set the start date and time for the script to run (e.g., set for tomorrow at 6 AM).
+    - Click "Next."
 
-- 操作の設定:
-    - 「プログラムの開始」を選択し、「次へ」をクリックします。
+- Set the action:
+    - Select "Start a program" and click "Next."
 
-- プログラム/スクリプトの設定:
-    - 「プログラム/スクリプト」に以下のようにWinPythonの実行ファイルのフルパスを入力します。（例．C:\Users\ryasu\WinPython-3.12.x\python-3.12.x.amd64\python.exe）
-    - 「引数の追加 (オプション)」にスクリプトのフルパスを入力します。（例:C:\Users\ryasu\Documents\GitHub\web_scraping\4_scraping_rate.py）
+- Program/Script settings:
+    - Enter the full path to the WinPython executable in "Program/Script" (e.g., C:\\Users\\ryasu\\WinPython-3.12.x\\python-3.12.x.amd64\\python.exe).
+    - Add the full path of the script in "Add arguments (optional)" (e.g., C:\\Users\\ryasu\\Documents\\GitHub\\web_scraping\\4_scraping_rate.py).
 
-- 完了:
-    - 「次へ」をクリックして、「完了」をクリックします。
+- Completion:
+    - Click "Next" and then "Finish."
 
-## パスの通し方（タスクスケジューラが動くようにするためには、当然ながらpythonのパスを通しておかないといけないので、その方法）
-- WinPythonのインストールディレクトリを開く:
-    - WinPythonのインストールパスを確認します。例えば、C:\Users\ryasu\WinPython-3.12.xのようになっているかもしれません。
-    - Pythonの実行ファイルがあるフォルダ（通常はpython-3.12.x.amd64など）を探します。
+## Path Setup (to ensure Task Scheduler can run Python)
+- Open WinPython's installation directory:
+    - Check the installation path of WinPython, such as C:\\Users\\ryasu\\WinPython-3.12.x.
+    - Find the folder containing the Python executable (usually something like python-3.12.x.amd64).
 
-- Python実行ファイルのパスをコピー:
-    - 例: C:\Users\ryasu\WinPython-3.12.x\python-3.12.x.amd64
+- Copy the path of the Python executable:
+    - Example: C:\\Users\\ryasu\\WinPython-3.12.x\\python-3.12.x.amd64
 
-- Windowsのシステム設定を開く:
-    - Windowsキー + Sを押して「環境変数」と入力し、「システム環境変数の編集」をクリックします。
+- Open Windows System Settings:
+    - Press Windows key + S, type "Environment Variables," and click "Edit the system environment variables."
 
-- 環境変数ダイアログを開く:
-    - 「システムのプロパティ」ウィンドウが開いたら、「環境変数」をクリックします。
+- Open Environment Variables Dialog:
+    - When the "System Properties" window opens, click "Environment Variables."
 
-- Path変数を編集:
-    - 「システム環境変数」の一覧から「Path」を選択し、「編集」をクリックします。
+- Edit the Path variable:
+    - In the "System variables" list, select "Path" and click "Edit."
 
-- 新しいパスを追加:
-    - 「新規」ボタンをクリックし、Python実行ファイルのパスを追加します。（例: C:\Users\ryasu\WinPython-3.12.x\python-3.12.x.amd64）
+- Add the new path:
+    - Click the "New" button and add the path to the Python executable (e.g., C:\\Users\\ryasu\\WinPython-3.12.x\\python-3.12.x.amd64).
 
-- 変更を保存:
-    - 「OK」をクリックして変更を保存し、すべてのダイアログを閉じます。
+- Save changes:
+    - Click "OK" to save changes and close all dialogs.
