@@ -8,7 +8,7 @@ import openpyxl
 import re
 import os
 
-# 作業ディレクトリを設定
+# set working directory
 target_dir = r"your working directory"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
