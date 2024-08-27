@@ -42,7 +42,7 @@ tmp_dir = 'tmp'
 if not os.path.exists(tmp_dir):
     os.makedirs(tmp_dir)
 
-# make DataFrame for result 
+# make DataFrame to store results
 results = pd.DataFrame(columns=['bank_name', 'url', 'robots_txt_url', 'crawl_status'])
 
 # 指定された範囲の行について処理を行う
