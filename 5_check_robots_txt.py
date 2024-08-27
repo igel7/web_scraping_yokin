@@ -90,7 +90,7 @@ final_df = pd.concat(all_batches, ignore_index=True)
 # show result
 print(final_df)
 
-# 最終結果をCSVに保存
+# stored results to csv
 final_csv = 'robot_kakunin.csv'
 final_df.to_csv(final_csv, index=False)
 print(f"Final results saved to {final_csv}")
