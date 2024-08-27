@@ -4,7 +4,7 @@
 ## Core Features
 - Collects ordinary deposit interest rate information from all financial institutions in Japan at appropriate times and stores it in an Excel file. Specifically, it covers the following three stages:
 ### 1. Preprocessing
-- A. If you list the financial institutions you want to research in a CSV file, it automatically searches Google with the institution's name + "saving deposit interest rate" and lists the URL of the first page that appears.
+- A. If you list the financial institutions you want to research in a CSV file, it automatically searches Google with the institution's name + "saving deposit interest rate (普通預金金利)" and lists the URL of the first page that appears.
 - B. Process to open the listed URLs in the browser in batches of 10 (it is assumed that CSS selectors will be collected manually).
 ### 2. Information Acquisition
 - Automatically retrieves information from web pages by using the CSV file data of URLs and CSS selectors.
@@ -22,7 +22,7 @@
 
 | File | Function |
 |:-----|:---------|
-| 1_url_collector.py | Uses Selenium to search Google for bank names and deposit interest rates, automatically collecting the first result URL. Reads bank names from `banks_list.csv` and outputs a list of bank names and URLs to `banks_output.csv`. |
+| 1_url_collector.py | Uses Selenium to search Google for bank names and "saving deposit interest rates (普通預金金利)", automatically collecting the first result URL. Reads bank names from `banks_list.csv` and outputs a list of bank names and URLs to `banks_output.csv`. |
 | 2_open_url.py | Opens URLs from the list in batches of 10 in a browser (to efficiently gather CSS selectors). Reads URLs from `banks_output.csv`, opens them, and manual CSS selector collection is assumed to create `banks_list_ok.csv`. |
 | 3_first_check.py | Tests if scraping works from the list of URLs and CSS selectors. Reads URL and CSS selector list from `banks_list_ok.csv`, performs scraping, and outputs the results to `first_check_result2.csv`. |
 | 4_scraping_rate.py | Production file. Reads the results from `first_check_result.csv` and appends them to `yokin_rate.xlsx` (creates the file if it does not exist). |
