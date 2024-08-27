@@ -7,7 +7,7 @@
 - A. If you list the financial institutions you want to research in a CSV file, it automatically searches Google with the institution's name + "saving deposit interest rate" and lists the URL of the first page that appears.
 - B. Process to open the listed URLs in the browser in batches of 10 (it is assumed that CSS selectors will be collected manually).
 ### 2. Information Acquisition
-- Automatically retrieves information from the CSV file of URLs and CSS selectors.
+- Automatically retrieves information from web pages by using the CSV file data of URLs and CSS selectors.
 ### 3. Supplementary Features
 - Automatically checks if the target web page's robots.txt allows crawling for the information acquisition directories.
 
