@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
 
-# 作業ディレクトリの設定
+# set working directory
 os.chdir('your working directory')
 print("Changed Directory:", os.getcwd())
 
@@ -56,12 +56,12 @@ start_row = 0  # start row（0-indexed）
 num_rows = 170  # job number to go
 batch_size = 3  # batch size
 
-# tmpフォルダの作成
+# make tmp directory for batch jobs
 tmp_dir = 'tmp'
 if not os.path.exists(tmp_dir):
     os.makedirs(tmp_dir)
 
-# 結果を格納するDataFrameの作成
+# make DataFrame to store results
 results = pd.DataFrame(columns=['date', 'bank_name', 'url', 'selector', 'type', 'pref', 'code', 'interest_rate', 'js', 'success'])
 
 # 指定された範囲の行について処理を行う
@@ -74,17 +74,17 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
     if pd.isna(selector) or not selector.strip():
         # Skip if CSS selector is blank
         rate, js, success = None, None, False
-        print(f"[{idx}/{len(banks_df)}] {bank_name}: セレクターが空欄のためスキップ")
+        print(f"[{idx}/{len(banks_df)}] {bank_name}: skip as the selector cell is blank")
     else:
         rate, js, success = get_rate(bank_name, url, selector)
         if success:
-            print(f"[{idx}/{len(banks_df)}] {bank_name}: JS未使用で成功")
+            print(f"[{idx}/{len(banks_df)}] {bank_name}: Success. No Java Script.")
         else:
             rate, js, success = get_rate_js(bank_name, url, selector)
             if success:
-                print(f"[{idx}/{len(banks_df)}] {bank_name}: JS使用で成功")
+                print(f"[{idx}/{len(banks_df)}] {bank_name}: Success. No Java Script.")
             else:
-                print(f"[{idx}/{len(banks_df)}] {bank_name}: 取得失敗")
+                print(f"[{idx}/{len(banks_df)}] {bank_name}: failed to get data.")
     
     # add result to result data frame
     result_row = pd.DataFrame([{
