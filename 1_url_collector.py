@@ -6,14 +6,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-# 作業ディレクトリを設定
+# set working directory
 target_dir = r"your working directory"
 os.chdir(target_dir)
 print(f"Current working directory: {os.getcwd()}")
 
-# CSVファイルの読み込み
-input_csv = 'banks_list.csv'  # 入力CSVファイルの名前
-output_csv = 'banks_output.csv'  # 出力CSVファイルの名前
+# import csv file
+input_csv = 'banks_list.csv
+output_csv = 'banks_output.csv'  # set output csv file name
 tmp_dir = os.path.join(target_dir, 'tmp')
 
 # make temp directory
@@ -35,15 +35,15 @@ def fetch_url(bank_name):
         search_box.send_keys(f"{bank_name} 普通預金金利")
         search_box.send_keys(Keys.RETURN)
         
-        time.sleep(2)  # 検索結果が表示されるまでの待機
+        time.sleep(2)  # wait till the search result comes out
 
-        # 検索結果から最初の結果をクリック
+        # click the first web page from the search reault
         results = driver.find_elements(By.CSS_SELECTOR, 'h3')
         if results:
             results[0].click()
-            time.sleep(2)  # ページがロードされるまでの待機
+            time.sleep(2)  # wait until the page loads
 
-            # URLを取得
+            # get URL
             return driver.current_url
     except Exception as e:
         print(f"Error fetching URL for {bank_name}: {e}")
