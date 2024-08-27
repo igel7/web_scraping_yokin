@@ -72,7 +72,7 @@ for idx, (index, row) in enumerate(banks_df.iloc[start_row:start_row + num_rows]
         print(f"Batch saved to {batch_file}")
         results = pd.DataFrame(columns=['bank_name', 'url', 'robots_txt_url', 'crawl_status'])
 
-# the lest
+# the rest
 if not results.empty:
     batch_file = os.path.join(tmp_dir, f'batch_{(idx // batch_size) + 1}.csv')
     results.to_csv(batch_file, index=False)
