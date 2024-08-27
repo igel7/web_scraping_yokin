@@ -19,16 +19,16 @@ def remove_muda(text):
     characters_to_remove = ["%", " ", "年", "％", "　", "(", ")", "金利", "普通預金", "Ç¯"]
     for char in characters_to_remove:
         text = text.replace(char, "")
-    # 全角数字を半角に変換
+    # change string to number
     text = text.translate(str.maketrans({
         "０": "0", "１": "1", "２": "2", "３": "3", "４": "4", 
         "５": "5", "６": "6", "７": "7", "８": "8", "９": "9", 
         "．": ".", "（": "", "）": ""}))
-    # 不要な括弧内の文字を削除
+    # remove any strings inside ()
     text = re.sub(r'\（.*?\）', '', text)
-    # 数字以外の部分を削除
+    # remove anything besides numbers
     text = re.sub(r'[^0-9.]', '', text)
-    # 数値に変換
+    # change sting to number
     try:
         return float(text)
     except ValueError:
@@ -59,22 +59,22 @@ def get_rate(bank_name, url, selector, use_js=False):
         print(f"Error fetching rate for {bank_name} with{' JS' if use_js else ''}: {e}")
         return None, use_js, False
 
-# first_check_result.csvからsuccess=Trueの行を抽出
+# From first_check_result.csv, choose rows that have success colum =True
 df = pd.read_csv('first_check_result.csv')
 success_df = df[df['success'] == True]
 
-# 種類ごとに成功率をコンソールに出力
+# show successful rate by type on console
 type_counts = success_df['type'].value_counts()
 type_totals = df['type'].value_counts()
 
-print("取得対象金融機関の状況: ")
+print("Status: ")
 for t in type_totals.index:
     print(f"{t}: {type_counts.get(t, 0)}/{type_totals[t]} ({(type_counts.get(t, 0) / type_totals[t]) * 100:.2f}%)")
 
-# 全体の行数を取得
+# get total number of banks
 total_rows = len(success_df)
 
-# 対象となる金融機関を順番にスクレイピング
+# scraping
 results = []
 
 for idx, row in success_df.iterrows():
@@ -96,7 +96,7 @@ for idx, row in success_df.iterrows():
         'success': success
     })
 
-    # コンソールに進行状況を出力
+    # shows status on console
     print(f"Processing {idx + 1}/{total_rows}: {bank_name} - {'Success' if success else 'Failed'}")
 
 
